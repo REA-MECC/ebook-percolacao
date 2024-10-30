@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação</title>
+<!--Generated on Thu Sep  5 14:58:45 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-per.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Notas em Percolação">
+<link rel="start" href="index.html" title="Notas em Percolação">
+<link rel="prev" href="Ch5.html" title="Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação">
+<link rel="next" href="A1.html" title="Apêndice A Prova a um lema do Capítulo 3 ‣ Notas em Percolação">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Introdução ‣ Notas em Percolação">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Ferramentas úteis ‣ Notas em Percolação">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação">
+<link rel="appendix" href="A1.html" title="Apêndice A Prova a um lema do Capítulo 3 ‣ Notas em Percolação">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas em Percolação">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas em Percolação</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Introdução</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Ferramentas úteis</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Fase Subcrítica: Decaimento Exponencial</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Fase Supercrítica: Unicidade do Aglomerado Infinito</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>O Modelo em 2 Dimensões: Dualidade</a></li>
+<li data-level="6" data-path="" class="ltx_tocentry ltx_tocentry_chapter ltx_ref_self  chapter active"><a href="" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Continuidade no Ponto Crítico: Renormalização</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Prova a um lema do Capítulo 3</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas em Percolação" class="ltx_ref">Referências</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Continuidade no Ponto Crítico: Renormalização</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_chapter normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter header-section-number">Capítulo 6</span> Continuidade no Ponto Crítico: Renormalização</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Neste último capítulo trataremos de forma pincelada de um método de ataque
+ao problema de se provar a continuidade de <math id="p1.m1" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math> em <math id="p1.m2" class="ltx_Math" alttext="p_{c}" display="inline"><semantics><msub><mi>p</mi><mi>c</mi></msub><annotation encoding="application/x-tex">p_{c}</annotation></semantics></math> em mais dimensões
+do que duas. Neste caso, não temos nem a auto-dualidade da rede
+hipercúbica nem conhecemos (ou esperamos algum dia conhecer) o valor exato
+de <math id="p1.m3" class="ltx_Math" alttext="p_{c}" display="inline"><semantics><msub><mi>p</mi><mi>c</mi></msub><annotation encoding="application/x-tex">p_{c}</annotation></semantics></math>. Ambos conhecimentos foram úteis em <math id="p1.m4" class="ltx_Math" alttext="d=2" display="inline"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">d=2</annotation></semantics></math> (Capítulo <a href="Ch5.html" title="Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a>).</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">A idéia será relacionar a ocorrência de percolação a um evento <span class="ltx_text ltx_font_italic">em volume
+finito</span>, cuja probabilidade, sendo contínua (pois as probabilidades de todos
+tais eventos são polinômios em <math id="p2.m1" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>), nos permitirá concluir que, se há
+percolação para <math id="p2.m2" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>, então há também para <math id="p2.m3" class="ltx_Math" alttext="p-\epsilon" display="inline"><semantics><mrow><mi>p</mi><mo>−</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">p-\epsilon</annotation></semantics></math> com <math id="p2.m4" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>
+suficientemente pequeno.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">O método é chamado de <span class="ltx_text ltx_font_italic">renormalização</span>. A versão a ser esboçada, que chamaremos
+renormalização <span class="ltx_text ltx_font_italic">estática</span>, não foi ainda realizada com rigor em modelos
+de percolação (uma prova para a Proposição <a href="#ThmProp2" title="Proposição 6.2 (Conjectura) ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a> abaixo
+ainda não
+foi feita), mas técnicas de renormalização <span class="ltx_text ltx_font_italic">dinâmica</span> muito similares
+foram aplicadas
+com sucesso para percolação em semi-espaços de <math id="p3.m1" class="ltx_Math" alttext="\mathbb{Z}^{d}" display="inline"><semantics><msup><mi>ℤ</mi><mi>d</mi></msup><annotation encoding="application/x-tex">\mathbb{Z}^{d}</annotation></semantics></math>, <math id="p3.m2" class="ltx_Math" alttext="d\geq 3" display="inline"><semantics><mrow><mi>d</mi><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">d\geq 3</annotation></semantics></math>
+<cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib7" title="" class="ltx_ref">7</a>]</cite>. O problema da continuidade no ponto crítico
+em <math id="p3.m3" class="ltx_Math" alttext="\mathbb{Z}^{d}" display="inline"><semantics><msup><mi>ℤ</mi><mi>d</mi></msup><annotation encoding="application/x-tex">\mathbb{Z}^{d}</annotation></semantics></math> inteiro permanece aberto para valores intermediários de <math id="p3.m4" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> entre
+<math id="p3.m5" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> e <math id="p3.m6" class="ltx_Math" alttext="d_{0}" display="inline"><semantics><msub><mi>d</mi><mn>0</mn></msub><annotation encoding="application/x-tex">d_{0}</annotation></semantics></math>, este último o menor valor para o qual Hara e Slade <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib17" title="" class="ltx_ref">17</a>]</cite> podem
+aplicar sua <span class="ltx_text ltx_font_italic">expansão em laços</span> e obter a continuidade a partir daí, entre outros
+resultados (<math id="p3.m7" class="ltx_Math" alttext="d_{0}" display="inline"><semantics><msub><mi>d</mi><mn>0</mn></msub><annotation encoding="application/x-tex">d_{0}</annotation></semantics></math> estava em 19 segundo as últimas notícias,
+mas não se espera que possa vir abaixo de 7).</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Para <math id="p4.m1" class="ltx_Math" alttext="0\leq K\leq L" display="inline"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>K</mi><mo>≤</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">0\leq K\leq L</annotation></semantics></math>, considere a partição de <math id="p4.m2" class="ltx_Math" alttext="\mathbb{Z}^{d}" display="inline"><semantics><msup><mi>ℤ</mi><mi>d</mi></msup><annotation encoding="application/x-tex">\mathbb{Z}^{d}</annotation></semantics></math> em cubos concêntricos
+de lado <math id="p4.m3" class="ltx_Math" alttext="2K" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">2K</annotation></semantics></math> e <math id="p4.m4" class="ltx_Math" alttext="2L" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">2L</annotation></semantics></math> como na figura abaixo e seja <math id="p4.m5" class="ltx_Math" alttext="A_{K,L}" display="inline"><semantics><msub><mi>A</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><annotation encoding="application/x-tex">A_{K,L}</annotation></semantics></math> o evento em que
+existe um caminho aberto dentro dos dois cubos grandes conectando a superfície
+dos dois cubos menores (vide Figura <a href="#F1" title="Figura 6.1 ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>).</p>
+</div>
+<figure id="F1" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x14.png" id="F1.g1" class="ltx_graphics ltx_img_landscape" width="486" height="205" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 6.1: </span>O evento <math id="F1.m2" class="ltx_Math" alttext="A_{K,L}" display="inline"><semantics><msub><mi>A</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><annotation encoding="application/x-tex">A_{K,L}</annotation></semantics></math></figcaption>
+</figure>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Para garantir interconexão, precisamos intersectar <math id="p5.m1" class="ltx_Math" alttext="A_{K,L}" display="inline"><semantics><msub><mi>A</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><annotation encoding="application/x-tex">A_{K,L}</annotation></semantics></math> com outro evento</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="B_{K,L}=B_{K,L}^{1}\cap B_{K,L}^{2}," display="block"><semantics><mrow><mrow><msub><mi>B</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>=</mo><mrow><msubsup><mi>B</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow><mn>1</mn></msubsup><mo>∩</mo><msubsup><mi>B</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow><mn>2</mn></msubsup></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">B_{K,L}=B_{K,L}^{1}\cap B_{K,L}^{2},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">em que <math id="p5.m2" class="ltx_Math" alttext="B_{K,L}^{i}" display="inline"><semantics><msubsup><mi>B</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow><mi>i</mi></msubsup><annotation encoding="application/x-tex">B_{K,L}^{i}</annotation></semantics></math>, <math id="p5.m3" class="ltx_Math" alttext="i=1,2" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1,2</mn></mrow><annotation encoding="application/x-tex">i=1,2</annotation></semantics></math>, é o evento de que todos os sítios do cubo menor <math id="p5.m4" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>, que
+estiverem ligados por caminhos abertos à fronteira do cubo grande respectivo,
+estarão conectados entre si por caminhos abertos dentro do cubo grande.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Seja <math id="p6.m1" class="ltx_Math" alttext="\tilde{A}_{K,L}=A_{K,L}\cap B_{K,L}" display="inline"><semantics><mrow><msub><mover accent="true"><mi>A</mi><mo>~</mo></mover><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>=</mo><mrow><msub><mi>A</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>∩</mo><msub><mi>B</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub></mrow></mrow><annotation encoding="application/x-tex">\tilde{A}_{K,L}=A_{K,L}\cap B_{K,L}</annotation></semantics></math>.</p>
+</div>
+<div id="ThmProp1" class="ltx_theorem ltx_theorem_Prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 6.1</span></span></h6>
+<div id="ThmProp1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="ThmProp1.p1.m1" class="ltx_Math" alttext="R_{K,L}=P_{p}(\tilde{A}_{K,L})." display="inline"><semantics><mrow><mrow><msub><mi>R</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>=</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mover accent="true"><mi>A</mi><mo>~</mo></mover><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">R_{K,L}=P_{p}(\tilde{A}_{K,L}).</annotation></semantics></math> Existe <math id="ThmProp1.p1.m2" class="ltx_Math" alttext="\lambda^{\ast}\in(0,1)" display="inline"><semantics><mrow><msup><mi>λ</mi><mo>∗</mo></msup><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda^{\ast}\in(0,1)</annotation></semantics></math> tal que se (para algum <math id="ThmProp1.p1.m3" class="ltx_Math" alttext="0\leq K\leq L" display="inline"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>K</mi><mo>≤</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">0\leq K\leq L</annotation></semantics></math> e <math id="ThmProp1.p1.m4" class="ltx_Math" alttext="0&lt;p&lt;1" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>p</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;p&lt;1</annotation></semantics></math>) <math id="ThmProp1.p1.m5" class="ltx_Math" alttext="R_{K,L}(p)&gt;\lambda^{\ast}" display="inline"><semantics><mrow><mrow><msub><mi>R</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><msup><mi>λ</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">R_{K,L}(p)&gt;\lambda^{\ast}</annotation></semantics></math>, então <math id="ThmProp1.p1.m6" class="ltx_Math" alttext="\theta(p)&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p)&gt;0</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Um argumento para a validade deste resultado será esboçado adiante.</p>
+</div>
+<div id="ThmProp2" class="ltx_theorem ltx_theorem_Prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 6.2</span></span><span class="ltx_text ltx_font_bold"> (Conjectura)</span>
+</h6>
+<div id="ThmProp2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se, para algum <math id="ThmProp2.p1.m1" class="ltx_Math" alttext="p^{\prime}\in(0,1)" display="inline"><semantics><mrow><msup><mi>p</mi><mo>′</mo></msup><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">p^{\prime}\in(0,1)</annotation></semantics></math>, <math id="ThmProp2.p1.m2" class="ltx_Math" alttext="\theta(p^{\prime})&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p^{\prime})&gt;0</annotation></semantics></math>, então</span></p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="\sup_{K}\liminf_{L\to\infty}P_{p^{\prime}}(A_{K,L})=1." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">sup</mo><mi>K</mi></munder><mrow><munder><mo lspace="0.167em" movablelimits="false" rspace="0.167em">lim inf</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>P</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sup_{K}\liminf_{L\to\infty}P_{p^{\prime}}(A_{K,L})=1.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.1)</span>
+            
+            
+          
+</div>
+</div>
+</div>
+<div id="ThmTeo1" class="ltx_theorem ltx_theorem_Teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 6.1</span></span></h6>
+<div id="ThmTeo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se a Proposição <a href="#ThmProp2" title="Proposição 6.2 (Conjectura) ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a> conjecturada for verdadeira, então</span></p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\theta(p_{c})=0." display="block"><semantics><mrow><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mi>c</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\theta(p_{c})=0.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p8" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova do teorema.</span></p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Primeiro mostraremos que a Proposição <a href="#ThmProp2" title="Proposição 6.2 (Conjectura) ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a> conjecturada implica que
+se <math id="p9.m1" class="ltx_Math" alttext="\theta(p^{\prime})&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p^{\prime})&gt;0</annotation></semantics></math>, então</p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="\sup_{K}\liminf_{L\to\infty}R_{K,L}(p^{\prime})=1" display="block"><semantics><mrow><mrow><munder><mo movablelimits="false">sup</mo><mi>K</mi></munder><mrow><munder><mo lspace="0.167em" movablelimits="false" rspace="0.167em">lim inf</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>R</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sup_{K}\liminf_{L\to\infty}R_{K,L}(p^{\prime})=1</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.2)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">(portanto <math id="p9.m2" class="ltx_Math" alttext="R_{K,L}(p^{\prime})&gt;\lambda^{\ast}" display="inline"><semantics><mrow><mrow><msub><mi>R</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><msup><mi>λ</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">R_{K,L}(p^{\prime})&gt;\lambda^{\ast}</annotation></semantics></math> para algum <math id="p9.m3" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> e <math id="p9.m4" class="ltx_Math" alttext="L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>).</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">De fato, para cada <math id="p10.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> fixo,</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\lim_{L\to\infty}P_{p^{\prime}}(B_{K,L}^{i})=1" display="block"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>P</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>B</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow><mi>i</mi></msubsup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_{L\to\infty}P_{p^{\prime}}(B_{K,L}^{i})=1</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para <math id="p10.m2" class="ltx_Math" alttext="i=1,2" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1,2</mn></mrow><annotation encoding="application/x-tex">i=1,2</annotation></semantics></math>, pois de outra forma haveria probabilidade positiva de que 2
+sítios do cubo menor estivessem em aglomerados infinitos disjuntos.
+Logo</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\lim_{L\to\infty}P_{p^{\prime}}(B_{K,L})=1" display="block"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>P</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_{L\to\infty}P_{p^{\prime}}(B_{K,L})=1</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">do que se conclui que</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\lim_{L\to\infty}P_{p^{\prime}}(\tilde{A}_{K,L})=\lim_{L\to\infty}P_{p^{\prime%
+}}(A_{K,L})=1." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>P</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mover accent="true"><mi>A</mi><mo>~</mo></mover><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>L</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>P</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{L\to\infty}P_{p^{\prime}}(\tilde{A}_{K,L})=\lim_{L\to\infty}P_{p^{\prime%
+}}(A_{K,L})=1.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Agora suponha que, para algum <math id="p11.m1" class="ltx_Math" alttext="p^{\prime}" display="inline"><semantics><msup><mi>p</mi><mo>′</mo></msup><annotation encoding="application/x-tex">p^{\prime}</annotation></semantics></math>, <math id="p11.m2" class="ltx_Math" alttext="\theta(p^{\prime})&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p^{\prime})&gt;0</annotation></semantics></math>. Pelo argumento acima podemos
+escolher <math id="p11.m3" class="ltx_Math" alttext="K_{0}" display="inline"><semantics><msub><mi>K</mi><mn>0</mn></msub><annotation encoding="application/x-tex">K_{0}</annotation></semantics></math> e <math id="p11.m4" class="ltx_Math" alttext="L_{0}" display="inline"><semantics><msub><mi>L</mi><mn>0</mn></msub><annotation encoding="application/x-tex">L_{0}</annotation></semantics></math> tais que <math id="p11.m5" class="ltx_Math" alttext="R_{K_{0},L_{0}}(p^{\prime})&gt;\lambda^{\ast}" display="inline"><semantics><mrow><mrow><msub><mi>R</mi><mrow><msub><mi>K</mi><mn>0</mn></msub><mo>,</mo><msub><mi>L</mi><mn>0</mn></msub></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><msup><mi>λ</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">R_{K_{0},L_{0}}(p^{\prime})&gt;\lambda^{\ast}</annotation></semantics></math>. Mas <math id="p11.m6" class="ltx_Math" alttext="R_{K_{0},L_{0}}(p)" display="inline"><semantics><mrow><msub><mi>R</mi><mrow><msub><mi>K</mi><mn>0</mn></msub><mo>,</mo><msub><mi>L</mi><mn>0</mn></msub></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">R_{K_{0},L_{0}}(p)</annotation></semantics></math> é um polinômio em
+<math id="p11.m7" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>. Logo</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="R_{K_{0},L_{0}}(p^{\prime}-\epsilon)&gt;\lambda^{\ast}" display="block"><semantics><mrow><mrow><msub><mi>R</mi><mrow><msub><mi>K</mi><mn>0</mn></msub><mo>,</mo><msub><mi>L</mi><mn>0</mn></msub></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mo>′</mo></msup><mo>−</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><msup><mi>λ</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">R_{K_{0},L_{0}}(p^{\prime}-\epsilon)&gt;\lambda^{\ast}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para algum <math id="p11.m8" class="ltx_Math" alttext="\epsilon" display="inline"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math> positivo. Pela Proposição <a href="#ThmProp1" title="Proposição 6.1 ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a></p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\theta(p^{\prime}-\epsilon)&gt;0." display="block"><semantics><mrow><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mo>′</mo></msup><mo>−</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\theta(p^{\prime}-\epsilon)&gt;0.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Temos portanto que <math id="p12.m1" class="ltx_Math" alttext="\theta(p^{\prime})&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p^{\prime})&gt;0</annotation></semantics></math> implica que <math id="p12.m2" class="ltx_Math" alttext="\theta(p^{\prime}-\epsilon)&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mo>′</mo></msup><mo>−</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p^{\prime}-\epsilon)&gt;0</annotation></semantics></math> para algum <math id="p12.m3" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>.
+Logo <math id="p12.m4" class="ltx_Math" alttext="\theta(p_{c})" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mi>c</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p_{c})</annotation></semantics></math> não pode ser positivo, pois isto implicaria em <math id="p12.m5" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math> positivo
+para algum <math id="p12.m6" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math>, o que contradiz a definição de <math id="p12.m7" class="ltx_Math" alttext="p_{c}" display="inline"><semantics><msub><mi>p</mi><mi>c</mi></msub><annotation encoding="application/x-tex">p_{c}</annotation></semantics></math>. <math id="p12.m8" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="p13" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">(Esboço de) Prova da Proposição <a href="#ThmProp1" title="Proposição 6.1 ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a> (em <math id="p13.m1" class="ltx_Math" alttext="d=3" display="inline"><semantics><mrow><mi>d</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">d=3</annotation></semantics></math>).</span></p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Considere uma rede <span class="ltx_text ltx_font_italic">renormalizada</span> isomórfica a <math id="p14.m1" class="ltx_Math" alttext="\mathbb{Z}^{2}" display="inline"><semantics><msup><mi>ℤ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{2}</annotation></semantics></math> na qual cada sítio
+corresponde a um cubo <math id="p14.m2" class="ltx_Math" alttext="2L\times 2L\times 2L" display="inline"><semantics><mrow><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>L</mi></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mn>2</mn></mrow><mo>⁢</mo><mi>L</mi></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mn>2</mn></mrow><mo>⁢</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">2L\times 2L\times 2L</annotation></semantics></math> em <math id="p14.m3" class="ltx_Math" alttext="\mathbb{Z}^{3}" display="inline"><semantics><msup><mi>ℤ</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{3}</annotation></semantics></math>, como na
+Figura <a href="#F2" title="Figura 6.2 ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a>. Declare um elo
+<span class="ltx_text ltx_font_italic">renormalizado</span> aberto se <math id="p14.m4" class="ltx_Math" alttext="\tilde{A}_{K,L}(e)" display="inline"><semantics><mrow><msub><mover accent="true"><mi>A</mi><mo>~</mo></mover><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\tilde{A}_{K,L}(e)</annotation></semantics></math> ocorrer.</p>
+</div>
+<figure id="F2" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x15.png" id="F2.g1" class="ltx_graphics ltx_img_landscape" width="426" height="245" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 6.2: </span>Parte da rede <math id="F2.m2" class="ltx_Math" alttext="\mathbb{Z}^{2}" display="inline"><semantics><msup><mi>ℤ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{2}</annotation></semantics></math> renormalizada.</figcaption>
+</figure>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Teremos então um modelo de percolação <span class="ltx_text ltx_font_italic">dependente</span> na rede renormalizada
+com uma medida de probabilidade <math id="p15.m1" class="ltx_Math" alttext="\tilde{P}_{p}" display="inline"><semantics><msub><mover accent="true"><mi>P</mi><mo>~</mo></mover><mi>p</mi></msub><annotation encoding="application/x-tex">\tilde{P}_{p}</annotation></semantics></math> tal que</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\tilde{P}_{p}(\mbox{$e$ está aberto})=R_{K,L}." display="block"><semantics><mrow><mrow><mrow><msub><mover accent="true"><mi>P</mi><mo>~</mo></mover><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>e</mi><mtext> está aberto</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>R</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\tilde{P}_{p}(\mbox{$e$ está aberto})=R_{K,L}.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">Precisamos mostrar que existe <math id="p16.m1" class="ltx_Math" alttext="\lambda^{\ast}\in(0,1)" display="inline"><semantics><mrow><msup><mi>λ</mi><mo>∗</mo></msup><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda^{\ast}\in(0,1)</annotation></semantics></math> tal que se <math id="p16.m2" class="ltx_Math" alttext="R_{K,L}" display="inline"><semantics><msub><mi>R</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><annotation encoding="application/x-tex">R_{K,L}</annotation></semantics></math> for maior do
+que <math id="p16.m3" class="ltx_Math" alttext="\lambda^{\ast}" display="inline"><semantics><msup><mi>λ</mi><mo>∗</mo></msup><annotation encoding="application/x-tex">\lambda^{\ast}</annotation></semantics></math>, então
+percolação dependente ocorre na rede renormalizada. Se isto ocorrer,
+obviamente percolação independente ocorrerá na rede original.</p>
+</div>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">A prova de que percolação dependente ocorre em <math id="p17.m1" class="ltx_Math" alttext="\mathbb{Z}^{2}" display="inline"><semantics><msup><mi>ℤ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{2}</annotation></semantics></math> renormalizada pode ser feita
+pelo mesmo argumento de Peierls na prova da Proposição <a href="Ch1.S2.html#Thmprop2" title="Proposição 1.2.2 ‣ 1.2 Primeiros Resultados ‣ Capítulo 1 Introdução ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2.2</span></a>
+(a partir dos circuitos nos elos duais de <math id="p17.m2" class="ltx_Math" alttext="\mathbb{Z}^{2}" display="inline"><semantics><msup><mi>ℤ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{2}</annotation></semantics></math>)
+com a única pequena modificação de que a medida nos elos não é mais
+independente, mas apenas <span class="ltx_text ltx_font_italic">localmente</span> dependente. Deixamos os detalhes
+para o leitor. <math id="p17.m3" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch5.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="A1.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "per.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

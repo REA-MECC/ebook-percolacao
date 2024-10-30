@@ -1,0 +1,958 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação</title>
+<!--Generated on Thu Sep  5 14:58:45 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-per.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Notas em Percolação">
+<link rel="start" href="index.html" title="Notas em Percolação">
+<link rel="prev" href="Ch3.html" title="Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação">
+<link rel="next" href="Ch5.html" title="Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Introdução ‣ Notas em Percolação">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Ferramentas úteis ‣ Notas em Percolação">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação">
+<link rel="appendix" href="A1.html" title="Apêndice A Prova a um lema do Capítulo 3 ‣ Notas em Percolação">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas em Percolação">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas em Percolação</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Introdução</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Ferramentas úteis</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Fase Subcrítica: Decaimento Exponencial</a></li>
+<li data-level="4" data-path="" class="ltx_tocentry ltx_tocentry_chapter ltx_ref_self  chapter active"><a href="" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Fase Supercrítica: Unicidade do Aglomerado Infinito</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>O Modelo em 2 Dimensões: Dualidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Continuidade no Ponto Crítico: Renormalização</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Prova a um lema do Capítulo 3</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas em Percolação" class="ltx_ref">Referências</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Fase Supercrítica: Unicidade do Aglomerado Infinito</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_chapter normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter header-section-number">Capítulo 4</span> Fase Supercrítica: Unicidade do Aglomerado Infinito</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">A ergodicidade da medida produto
+tem como conseqüência que, quase certamente, existe um aglomerado infinito quando
+<math id="p1.m1" class="ltx_Math" alttext="\theta(p)&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p)&gt;0</annotation></semantics></math>.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">De fato, o evento de que existe um aglomerado infinito
+(<math id="p2.m1" class="ltx_Math" alttext="\cup_{x\in\mathbb{Z}^{d}}\{|C_{x}|=\infty\}" display="inline"><semantics><mrow><msub><mo>∪</mo><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℤ</mi><mi>d</mi></msup></mrow></msub><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>x</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\cup_{x\in\mathbb{Z}^{d}}\{|C_{x}|=\infty\}</annotation></semantics></math>) é invariante por translação e portanto
+trivial sob <math id="p2.m2" class="ltx_Math" alttext="P_{p}" display="inline"><semantics><msub><mi>P</mi><mi>p</mi></msub><annotation encoding="application/x-tex">P_{p}</annotation></semantics></math>. (O que decorre também deste evento ser caudal e da Lei
+0-1 de Kolmogorov.)</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Neste capítulo, a ergodicidade será
+explorada para estabelecer um dos aspectos mais interessantes desta fase, o fato de que
+o aglomerado infinito é único (quase certamente).</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Vamos definir por <math id="p4.m1" class="ltx_Math" alttext="\eta" display="inline"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> a variável aleatória que conta o número de aglomerados infinitos distintos
+de uma configuração de <math id="p4.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.
+<math id="p4.m3" class="ltx_Math" alttext="\eta" display="inline"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> é invariante por translação (pois translações das configurações de <math id="p4.m4" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> não alteram
+o número de aglomerados infinitos delas) e as medidas <math id="p4.m5" class="ltx_Math" alttext="P_{p}" display="inline"><semantics><msub><mi>P</mi><mi>p</mi></msub><annotation encoding="application/x-tex">P_{p}</annotation></semantics></math> são ergódicas, por serem
+produto. Portanto, por uma conhecida lei 0-1, <math id="p4.m6" class="ltx_Math" alttext="\eta" display="inline"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> é constante quase certamente. Em
+princípio,
+<math id="p4.m7" class="ltx_Math" alttext="\eta" display="inline"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> pode assumir qualquer valor inteiro, desde <math id="p4.m8" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> até <math id="p4.m9" class="ltx_Math" alttext="\infty" display="inline"><semantics><mi mathvariant="normal">∞</mi><annotation encoding="application/x-tex">\infty</annotation></semantics></math>.
+O resultado principal deste capítulo exclui <math id="p4.m10" class="ltx_Math" alttext="\eta\geq 2" display="inline"><semantics><mrow><mi>η</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\eta\geq 2</annotation></semantics></math>.</p>
+</div>
+<div id="ThmTeo1" class="ltx_theorem ltx_theorem_Teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 4.1</span></span></h6>
+<div id="ThmTeo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qualquer que seja <math id="ThmTeo1.p1.m1" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>,</span></p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="P_{p}(\eta=0)=1" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P_{p}(\eta=0)=1</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.1)</span>
+            
+            
+          
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">ou</span></p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="P_{p}(\eta=1)=1." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(\eta=1)=1.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.2)</span>
+            
+            
+          
+</div>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">O Teorema <a href="#ThmTeo1" title="Teorema 4.1 ‣ Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a> é provado por meio das seguintes proposições, devidas
+respectivamente
+a Newman e Schulman <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib15" title="" class="ltx_ref">15</a>]</cite> e Aizenman, Kesten e
+Newman <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib6" title="" class="ltx_ref">6</a>]</cite>. A primeira, exclui <math id="p5.m1" class="ltx_Math" alttext="2\leq\eta&lt;\infty" display="inline"><semantics><mrow><mn>2</mn><mo>≤</mo><mi>η</mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">2\leq\eta&lt;\infty</annotation></semantics></math>.
+A segunda exclui <math id="p5.m2" class="ltx_Math" alttext="\eta\geq 3" display="inline"><semantics><mrow><mi>η</mi><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\eta\geq 3</annotation></semantics></math>. (Infelizmente, não se pode
+incluir <math id="p5.m3" class="ltx_Math" alttext="\infty" display="inline"><semantics><mi mathvariant="normal">∞</mi><annotation encoding="application/x-tex">\infty</annotation></semantics></math> na primeira ou <math id="p5.m4" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> na segunda.)</p>
+</div>
+<div id="ThmProp1" class="ltx_theorem ltx_theorem_Prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 4.1</span></span></h6>
+<div id="ThmProp1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qualquer que seja <math id="ThmProp1.p1.m1" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>,</span></p>
+<div id="E3" class="ltx_equation ltx_eqn_div">
+<span><math id="E3.m1" class="ltx_Math" alttext="P_{p}(\eta=0)=1" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P_{p}(\eta=0)=1</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.3)</span>
+            
+            
+          
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">ou</span></p>
+<div id="E4" class="ltx_equation ltx_eqn_div">
+<span><math id="E4.m1" class="ltx_Math" alttext="P_{p}(\eta=1)=1" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P_{p}(\eta=1)=1</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.4)</span>
+            
+            
+          
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">ou</span></p>
+<div id="E5" class="ltx_equation ltx_eqn_div">
+<span><math id="E5.m1" class="ltx_Math" alttext="P_{p}(\eta=\infty)=1." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(\eta=\infty)=1.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.5)</span>
+            
+            
+          
+</div>
+</div>
+</div>
+<div id="p6" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova</span></p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Seja <math id="p7.m1" class="ltx_Math" alttext="k_{p}" display="inline"><semantics><msub><mi>k</mi><mi>p</mi></msub><annotation encoding="application/x-tex">k_{p}</annotation></semantics></math> a constante tal que <math id="p7.m2" class="ltx_Math" alttext="P_{p}(\eta=k_{p})=1" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><msub><mi>k</mi><mi>p</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P_{p}(\eta=k_{p})=1</annotation></semantics></math>. Suponha que <math id="p7.m3" class="ltx_Math" alttext="1\leq k_{p}&lt;\infty" display="inline"><semantics><mrow><mn>1</mn><mo>≤</mo><msub><mi>k</mi><mi>p</mi></msub><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">1\leq k_{p}&lt;\infty</annotation></semantics></math>. Vamos
+mostrar que disto se segue que <math id="p7.m4" class="ltx_Math" alttext="P_{p}(\eta=1)&gt;0" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(\eta=1)&gt;0</annotation></semantics></math>, o que implica pela trivialidade de <math id="p7.m5" class="ltx_Math" alttext="\eta" display="inline"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> que <math id="p7.m6" class="ltx_Math" alttext="k_{p}=1" display="inline"><semantics><mrow><msub><mi>k</mi><mi>p</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k_{p}=1</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">De fato, denotando por <math id="p8.m1" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math> o cubo de lado <math id="p8.m2" class="ltx_Math" alttext="2n+1" display="inline"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2n+1</annotation></semantics></math> centrado na origem., considere o
+evento</p>
+<div id="E6" class="ltx_equation ltx_eqn_div">
+<span><math id="E6.m1" class="ltx_Math" alttext="A_{n}=\{\mbox{todos os aglomerados infinitos intersectam $Q_{n}$}\}." display="block"><semantics><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mtext>todos os aglomerados infinitos intersectam </mtext><msub><mi>Q</mi><mi>n</mi></msub></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">A_{n}=\{\mbox{todos os aglomerados infinitos intersectam $Q_{n}$}\}.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.6)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">Note que <math id="p8.m3" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math> depende da configuração de elos apenas da fronteira de <math id="p8.m4" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math> para fora.
+Como <math id="p8.m5" class="ltx_Math" alttext="k_{p}&lt;\infty" display="inline"><semantics><mrow><msub><mi>k</mi><mi>p</mi></msub><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">k_{p}&lt;\infty</annotation></semantics></math>,</p>
+<div id="E7" class="ltx_equation ltx_eqn_div">
+<span><math id="E7.m1" class="ltx_Math" alttext="\lim_{n\to\infty}P_{p}(A_{n},\eta=k_{p})=P_{p}(\eta=k_{p})=1." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>,</mo><mi>η</mi></mrow><mo>=</mo><msub><mi>k</mi><mi>p</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>=</mo><msub><mi>k</mi><mi>p</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}P_{p}(A_{n},\eta=k_{p})=P_{p}(\eta=k_{p})=1.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.7)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Seja <math id="p9.m1" class="ltx_Math" alttext="n_{0}" display="inline"><semantics><msub><mi>n</mi><mn>0</mn></msub><annotation encoding="application/x-tex">n_{0}</annotation></semantics></math> tal que <math id="p9.m2" class="ltx_Math" alttext="P_{p}(A_{n_{0}})&gt;0" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(A_{n_{0}})&gt;0</annotation></semantics></math> e considere o evento</p>
+<div id="E8" class="ltx_equation ltx_eqn_div">
+<span><math id="E8.m1" class="ltx_Math" alttext="B_{n_{0}}=\{\mbox{todos os elos interiores de $Q_{n_{0}}$ estão abertos}\}." display="block"><semantics><mrow><mrow><msub><mi>B</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mtext>todos os elos interiores de </mtext><msub><mi>Q</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mtext> estão abertos</mtext></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">B_{n_{0}}=\{\mbox{todos os elos interiores de $Q_{n_{0}}$ estão abertos}\}.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.8)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">Note que <math id="p9.m3" class="ltx_Math" alttext="B_{n_{0}}" display="inline"><semantics><msub><mi>B</mi><msub><mi>n</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">B_{n_{0}}</annotation></semantics></math> depende apenas dos elos interiores a <math id="p9.m4" class="ltx_Math" alttext="Q_{n_{0}}" display="inline"><semantics><msub><mi>Q</mi><msub><mi>n</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">Q_{n_{0}}</annotation></semantics></math> e logo
+é independente de <math id="p9.m5" class="ltx_Math" alttext="A_{n_{0}}" display="inline"><semantics><msub><mi>A</mi><msub><mi>n</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">A_{n_{0}}</annotation></semantics></math>.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Finalmente, o evento de que <math id="p10.m1" class="ltx_Math" alttext="\eta=1" display="inline"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\eta=1</annotation></semantics></math> contem <math id="p10.m2" class="ltx_Math" alttext="A_{n_{0}}\cap B_{n_{0}}" display="inline"><semantics><mrow><msub><mi>A</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>∩</mo><msub><mi>B</mi><msub><mi>n</mi><mn>0</mn></msub></msub></mrow><annotation encoding="application/x-tex">A_{n_{0}}\cap B_{n_{0}}</annotation></semantics></math>.
+Concluimos da discussão acima que</p>
+<div id="E9" class="ltx_equation ltx_eqn_div">
+<span><math id="E9.m1" class="ltx_math_unparsed" alttext="P_{p}(\eta=1)\geq P_{p}(A_{n_{0}}\cap B_{n_{0}})=P_{p}(A_{n_{0}})P_{p}(B_{n_{0%
+}})&gt;0.\quad\triangle" display="block"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mi>η</mi><mo>=</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>≥</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>∩</mo><msub><mi>B</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo stretchy="false">)</mo></mrow><mo>=</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo stretchy="false">)</mo></mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo stretchy="false">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo lspace="0em">.</mo><mspace width="1.367em"></mspace><mi mathvariant="normal">△</mi></mrow><annotation encoding="application/x-tex">P_{p}(\eta=1)\geq P_{p}(A_{n_{0}}\cap B_{n_{0}})=P_{p}(A_{n_{0}})P_{p}(B_{n_{0%
+}})&gt;0.\quad\triangle</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.9)</span>
+          
+          
+        
+</div>
+</div>
+<div id="ThmProp2" class="ltx_theorem ltx_theorem_Prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 4.2</span></span></h6>
+<div id="ThmProp2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Qualquer que seja <math id="ThmProp2.p1.m1" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>,</span></p>
+<div id="E10" class="ltx_equation ltx_eqn_div">
+<span><math id="E10.m1" class="ltx_Math" alttext="P_{p}(\eta\geq 3)=0." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>≥</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(\eta\geq 3)=0.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.10)</span>
+            
+            
+          
+</div>
+</div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Deste resultado apresentaremos uma prova
+diferente da original de Aizenman, Kesten e Newman,
+mais simples e geral, devida a Burton e Keane <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib16" title="" class="ltx_ref">16</a>]</cite>.
+Ela se vale do argumento geométrico esboçado a seguir.</p>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">A ocorrência de três aglomerados infinitos disjuntos (e a ergodicidade de <math id="p12.m1" class="ltx_Math" alttext="P_{p}" display="inline"><semantics><msub><mi>P</mi><mi>p</mi></msub><annotation encoding="application/x-tex">P_{p}</annotation></semantics></math>) tem como
+conseqüência a existência de uma densidade de <span class="ltx_text ltx_font_italic">pontos triplos especiais</span>, isto é, sítios
+ligados por elos disjuntos a três aglomerados infinitos, que seriam disjuntos ao
+se remover os elos incidentes àqueles sítios. Mas um lema sobre grafos
+(que será enunciado abaixo como exercício) mostra que dentro de um cubo podem existir um número de pontos
+triplos especiais apenas da ordem da área da fronteira do cubo. Da contradição segue o
+resultado da proposição.</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">Agora enunciamos o lema sobre grafos, em forma de exercício para o leitor.</p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Exercício</span></p>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Seja G um grafo conexo com conjunto de sítios S e conjunto de elos E. Um sítio
+<math id="p15.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> em S será chamado um <span class="ltx_text ltx_font_italic">ponto triplo</span> para G se</p>
+</div>
+<div id="p16" class="ltx_para">
+<ul id="S0.I1" class="ltx_itemize">
+<li id="S0.I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">i)</span><div id="S0.I1.ix1.p1" class="ltx_para">​<p class="ltx_p">existirem apenas três elos de E tocando <math id="S0.I1.ix1.p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="S0.I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">ii)</span><div id="S0.I1.ix2.p1" class="ltx_para">​<p class="ltx_p">o grafo G<math id="S0.I1.ix2.p1.m1" class="ltx_Math" alttext="\backslash" display="inline"><semantics><mo>\</mo><annotation encoding="application/x-tex">\backslash</annotation></semantics></math>{<math id="S0.I1.ix2.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>}, em que <math id="S0.I1.ix2.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é removido de S e os três
+elos tocando em <math id="S0.I1.ix2.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> são removidos de E, tem exatamente três componentes
+conexos. (Denotaremos os conjuntos de sítios destes três componentes
+<math id="S0.I1.ix2.p1.m5" class="ltx_Math" alttext="E_{1}(x),E_{2}(x),E_{3}(x)" display="inline"><semantics><mrow><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E_{1}(x),E_{2}(x),E_{3}(x)</annotation></semantics></math> e os chamaremos de ramos. Veja Figura <a href="#F1" title="Figura 4.1 ‣ Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a>.)</p>
+</div>
+</li>
+</ul>
+</div>
+<figure id="F1" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x7.png" id="F1.g1" class="ltx_graphics ltx_img_square" width="166" height="160" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 4.1: </span><math id="F1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é um ponto triplo</figcaption>
+</figure>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">a. Suponha que G seja um grafo conexo e que <math id="p17.m1" class="ltx_Math" alttext="x_{1},x_{2},\ldots,x_{n}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">x_{1},x_{2},\ldots,x_{n}</annotation></semantics></math> sejam
+pontos triplos distintos para G. Mostre que para algum i dois dos três
+ramos em <math id="p17.m2" class="ltx_Math" alttext="x_{i}" display="inline"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">x_{i}</annotation></semantics></math>, digamos <math id="p17.m3" class="ltx_Math" alttext="E_{2}(x_{i})" display="inline"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_{2}(x_{i})</annotation></semantics></math> e <math id="p17.m4" class="ltx_Math" alttext="E_{3}(x_{i})" display="inline"><semantics><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_{3}(x_{i})</annotation></semantics></math> não contêm nenhum dos
+outros pontos triplos (<math id="p17.m5" class="ltx_Math" alttext="\{x_{1},\ldots,x_{n}\}\backslash\{x_{i}\}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo rspace="0.222em" stretchy="false">}</mo></mrow><mo rspace="0.222em">\</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\{x_{1},\ldots,x_{n}\}\backslash\{x_{i}\}</annotation></semantics></math>).[Sugestão:
+indução em n]</p>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">b. Considere o grafo <math id="p18.m1" class="ltx_Math" alttext="\mbox{G}^{\prime}" display="inline"><semantics><msup><mtext>G</mtext><mo>′</mo></msup><annotation encoding="application/x-tex">\mbox{G}^{\prime}</annotation></semantics></math> obtido de G e <math id="p18.m2" class="ltx_Math" alttext="x_{1},\ldots,x_{n}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">x_{1},\ldots,x_{n}</annotation></semantics></math> do item anterior
+removendo-se todos os sítios de <math id="p18.m3" class="ltx_Math" alttext="E_{3}(x_{i})" display="inline"><semantics><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_{3}(x_{i})</annotation></semantics></math> e todos os elos tocando estes
+sítios. Mostre que <math id="p18.m4" class="ltx_Math" alttext="\{x_{1},\ldots,x_{n}\}\backslash\{x_{i}\}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo rspace="0.222em" stretchy="false">}</mo></mrow><mo rspace="0.222em">\</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\{x_{1},\ldots,x_{n}\}\backslash\{x_{i}\}</annotation></semantics></math> são pontos triplos
+para <math id="p18.m5" class="ltx_Math" alttext="\mbox{G}^{\prime}" display="inline"><semantics><msup><mtext>G</mtext><mo>′</mo></msup><annotation encoding="application/x-tex">\mbox{G}^{\prime}</annotation></semantics></math>.</p>
+</div>
+<div id="p19" class="ltx_para">
+<p class="ltx_p">c. Suponha que G seja um grafo conexo e que <math id="p19.m1" class="ltx_Math" alttext="x_{1},\ldots,x_{n}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">x_{1},\ldots,x_{n}</annotation></semantics></math> sejam pontos triplos
+distintos de G. Entre os 3n ramos,</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="E_{1}(x_{1}),E_{2}(x_{1}),E_{3}(x_{1}),E_{1}(x_{2}),\ldots,E_{3}(x_{n})," display="block"><semantics><mrow><mrow><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">E_{1}(x_{1}),E_{2}(x_{1}),E_{3}(x_{1}),E_{1}(x_{2}),\ldots,E_{3}(x_{n}),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">mostre que se pode achar pelo menos n+2 ramos <span class="ltx_text ltx_font_italic">disjuntos</span>.</p>
+</div>
+<div id="p20" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova da Proposição <a href="#ThmProp2" title="Proposição 4.2 ‣ Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2</span></a></span></p>
+</div>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="p21.m1" class="ltx_Math" alttext="P_{p}(\eta\geq 3)&gt;0" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>≥</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(\eta\geq 3)&gt;0</annotation></semantics></math>. Vamos procurar uma contradição.</p>
+</div>
+<div id="p22" class="ltx_para">
+<p class="ltx_p">Seja o evento</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx18" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex3">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex2.m1" class="ltx_Math" alttext="\displaystyle F_{n}" display="inline"><semantics><msub><mi>F</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\displaystyle F_{n}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex2.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex2.m3" class="ltx_math_unparsed" alttext="\displaystyle\{\mbox{pelo menos três aglomerados infinitos abertos distintos}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mtext>pelo menos três aglomerados infinitos abertos distintos</mtext></mrow><annotation encoding="application/x-tex">\displaystyle\{\mbox{pelo menos três aglomerados infinitos abertos distintos}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex3.m1" class="ltx_math_unparsed" alttext="\displaystyle\mbox{atingem $Q_{n-1}$}\}." display="inline"><semantics><mrow><mrow><mtext>atingem </mtext><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">}</mo><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{atingem $Q_{n-1}$}\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="p23" class="ltx_para">
+<p class="ltx_p">Note que <math id="p23.m1" class="ltx_Math" alttext="F_{n}\uparrow\{\eta\geq 3\}" display="inline"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo stretchy="false">↑</mo><mrow><mo stretchy="false">{</mo><mrow><mi>η</mi><mo>≥</mo><mn>3</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">F_{n}\uparrow\{\eta\geq 3\}</annotation></semantics></math> quando <math id="p23.m2" class="ltx_Math" alttext="n\uparrow\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">↑</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\uparrow\infty</annotation></semantics></math>, logo
+existe <math id="p23.m3" class="ltx_Math" alttext="n_{0}" display="inline"><semantics><msub><mi>n</mi><mn>0</mn></msub><annotation encoding="application/x-tex">n_{0}</annotation></semantics></math> tal que <math id="p23.m4" class="ltx_Math" alttext="P_{p}(F_{n_{0}})&gt;0" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(F_{n_{0}})&gt;0</annotation></semantics></math>. Dados <math id="p23.m5" class="ltx_Math" alttext="y_{1},y_{2},y_{3}" display="inline"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">y_{1},y_{2},y_{3}</annotation></semantics></math> três pontos distintos
+no interior das faces de <math id="p23.m6" class="ltx_Math" alttext="\partial Q_{n_{0}}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>Q</mi><msub><mi>n</mi><mn>0</mn></msub></msub></mrow><annotation encoding="application/x-tex">\partial Q_{n_{0}}</annotation></semantics></math>, seja o evento</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx19" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex5">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex4.m1" class="ltx_Math" alttext="\displaystyle F_{n_{0}}(y_{1},y_{2},y_{3})" display="inline"><semantics><mrow><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle F_{n_{0}}(y_{1},y_{2},y_{3})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex4.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex4.m3" class="ltx_math_unparsed" alttext="\displaystyle\{y_{1},y_{2},y_{3}\,\,\mbox{pertencem a aglomerados infinitos distintos}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mtext>pertencem a aglomerados infinitos distintos</mtext></mrow><annotation encoding="application/x-tex">\displaystyle\{y_{1},y_{2},y_{3}\,\,\mbox{pertencem a aglomerados infinitos distintos}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex5.m1" class="ltx_math_unparsed" alttext="\displaystyle\mbox{usando apenas elos exteriores a $Q_{n_{0}}$}\}." display="inline"><semantics><mrow><mrow><mtext>usando apenas elos exteriores a </mtext><msub><mi>Q</mi><msub><mi>n</mi><mn>0</mn></msub></msub></mrow><mo stretchy="false">}</mo><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{usando apenas elos exteriores a $Q_{n_{0}}$}\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<span id="footnotex1" class="ltx_note ltx_role_footnotetext"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_note_type">footnotetext: </span>exclui elos com pelo menos uma extremidade em <math id="footnotex1.m1" class="ltx_Math" alttext="Q_{n-1}" display="inline"><semantics><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">Q_{n-1}</annotation></semantics></math></span></span></span>
+<p class="ltx_p">Como <math id="p23.m7" class="ltx_Math" alttext="F_{n_{0}}\subset\bigcup_{y_{1},y_{2},y_{3}}F_{n_{0}}(y_{1},y_{2},y_{3})" display="inline"><semantics><mrow><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo rspace="0.111em">⊂</mo><mrow><msub><mo>⋃</mo><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub></mrow></msub><mrow><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">F_{n_{0}}\subset\bigcup_{y_{1},y_{2},y_{3}}F_{n_{0}}(y_{1},y_{2},y_{3})</annotation></semantics></math>, temos que</p>
+<div id="E11" class="ltx_equation ltx_eqn_div">
+<span><math id="E11.m1" class="ltx_Math" alttext="P_{p}(F_{n_{0}}(y_{1},y_{2},y_{3}))&gt;0" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(F_{n_{0}}(y_{1},y_{2},y_{3}))&gt;0</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.11)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para algum <math id="p23.m8" class="ltx_Math" alttext="y_{1},y_{2},y_{3}" display="inline"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">y_{1},y_{2},y_{3}</annotation></semantics></math>. Dados estes <math id="p23.m9" class="ltx_Math" alttext="y_{1},y_{2},y_{3}" display="inline"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">y_{1},y_{2},y_{3}</annotation></semantics></math>, seja <math id="p23.m10" class="ltx_Math" alttext="x=x(y_{1},y_{2},y_{3})" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x=x(y_{1},y_{2},y_{3})</annotation></semantics></math> um ponto do interior
+de <math id="p23.m11" class="ltx_Math" alttext="Q_{n_{0}}" display="inline"><semantics><msub><mi>Q</mi><msub><mi>n</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">Q_{n_{0}}</annotation></semantics></math> com a propriedade de que há três caminhos de elos disjuntos
+no interior <math id="p23.m12" class="ltx_Math" alttext="Q_{n_{0}}" display="inline"><semantics><msub><mi>Q</mi><msub><mi>n</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">Q_{n_{0}}</annotation></semantics></math><span id="footnotex2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+            <span class="ltx_tag ltx_tag_note">2</span>
+            
+            
+            
+          <math id="footnotex2.m1" class="ltx_Math" alttext="Q_{n-1}" display="inline"><semantics><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">Q_{n-1}</annotation></semantics></math> mais os elos com uma extremidade
+em <math id="footnotex2.m2" class="ltx_Math" alttext="Q_{n-1}" display="inline"><semantics><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">Q_{n-1}</annotation></semantics></math></span></span></span> ligando <math id="p23.m13" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> a <math id="p23.m14" class="ltx_Math" alttext="y_{1},y_{2},y_{3}" display="inline"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">y_{1},y_{2},y_{3}</annotation></semantics></math> respectivamente. Defina agora o evento</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx20" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex7">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex6.m1" class="ltx_Math" alttext="\displaystyle F^{\prime}_{n_{0}}(y_{1},y_{2},y_{3})" display="inline"><semantics><mrow><msubsup><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle F^{\prime}_{n_{0}}(y_{1},y_{2},y_{3})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex6.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex6.m3" class="ltx_math_unparsed" alttext="\displaystyle\{\mbox{os três caminhos mencionados acima estão abertos,}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mtext>os três caminhos mencionados acima estão abertos,</mtext></mrow><annotation encoding="application/x-tex">\displaystyle\{\mbox{os três caminhos mencionados acima estão abertos,}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex7.m1" class="ltx_math_unparsed" alttext="\displaystyle\mbox{todos os demais elos do interior de $Q_{n}$ estão fechados}\}." display="inline"><semantics><mrow><mrow><mtext>todos os demais elos do interior de </mtext><msub><mi>Q</mi><mi>n</mi></msub><mtext> estão fechados</mtext></mrow><mo stretchy="false">}</mo><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{todos os demais elos do interior de $Q_{n}$ estão fechados}\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<figure id="F2" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x8.png" id="F2.g1" class="ltx_graphics ltx_img_square" width="271" height="286" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 4.2: </span>O evento <math id="F2.m2" class="ltx_Math" alttext="F^{\prime}_{n_{0}}(y_{1},y_{2},y_{3})" display="inline"><semantics><mrow><msubsup><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F^{\prime}_{n_{0}}(y_{1},y_{2},y_{3})</annotation></semantics></math>.</figcaption>
+</figure>
+<div id="p24" class="ltx_para">
+<p class="ltx_p">Logo</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx21" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex9">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex8.m1" class="ltx_Math" alttext="\displaystyle P_{p}(F_{n_{0}}(y_{1},y_{2},y_{3})\cap F^{\prime}_{n_{0}}(y_{1},%
+y_{2},y_{3}))" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><mrow><msubsup><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(F_{n_{0}}(y_{1},y_{2},y_{3})\cap F^{\prime}_{n_{0}}(y_{1},%
+y_{2},y_{3}))</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex9.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex9.m2" class="ltx_Math" alttext="\displaystyle P_{p}(F_{n_{0}}(y_{1},y_{2},y_{3}))P_{p}(F^{\prime}_{n_{0}}(y_{1%
+},y_{2},y_{3}))&gt;0," display="inline"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(F_{n_{0}}(y_{1},y_{2},y_{3}))P_{p}(F^{\prime}_{n_{0}}(y_{1%
+},y_{2},y_{3}))&gt;0,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">onde a
+igualdade segue da independência dos eventos (o primeiro depende
+apenas de elos exteriores a <math id="p24.m1" class="ltx_Math" alttext="Q_{n_{0}}" display="inline"><semantics><msub><mi>Q</mi><msub><mi>n</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">Q_{n_{0}}</annotation></semantics></math>; o segundo, apenas de elos interiores).</p>
+</div>
+<div id="p25" class="ltx_para">
+<p class="ltx_p">Vamos dizer agora que um ponto triplo (segundo a definição no exercício acima)
+é um <span class="ltx_text ltx_font_italic">ponto triplo especial</span> se seus ramos são infinitos.
+Note que</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\{\mbox{$x(y_{1},y_{2},y_{3})$ é um ponto triplo especial}\}\supset F_{n_{0}}(%
+y_{1},y_{2},y_{3})\cap F^{\prime}_{n_{0}}(y_{1},y_{2},y_{3})." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">{</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mtext> é um ponto triplo especial</mtext></mrow><mo stretchy="false">}</mo></mrow><mo>⊃</mo><mrow><mrow><msub><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><mrow><msubsup><mi>F</mi><msub><mi>n</mi><mn>0</mn></msub><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\{\mbox{$x(y_{1},y_{2},y_{3})$ é um ponto triplo especial}\}\supset F_{n_{0}}(%
+y_{1},y_{2},y_{3})\cap F^{\prime}_{n_{0}}(y_{1},y_{2},y_{3}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">De toda discussão acima, concluimos que, se <math id="p25.m1" class="ltx_Math" alttext="P_{p}(\eta\geq 3)&gt;0" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>η</mi><mo>≥</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(\eta\geq 3)&gt;0</annotation></semantics></math>,
+então</p>
+<div id="E12" class="ltx_equation ltx_eqn_div">
+<span><math id="E12.m1" class="ltx_Math" alttext="P_{p}(\mbox{$x$ é um ponto triplo especial})&gt;0." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mtext> é um ponto triplo especial</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(\mbox{$x$ é um ponto triplo especial})&gt;0.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.12)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">A probabilidade acima não depende de <math id="p25.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, pela invariância por translação
+de <math id="p25.m3" class="ltx_Math" alttext="P_{p}" display="inline"><semantics><msub><mi>P</mi><mi>p</mi></msub><annotation encoding="application/x-tex">P_{p}</annotation></semantics></math>. Vamos denotá-la por <math id="p25.m4" class="ltx_Math" alttext="\rho" display="inline"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>.
+Segue-se que</p>
+<div id="E13" class="ltx_equation ltx_eqn_div">
+<span><math id="E13.m1" class="ltx_math_unparsed" alttext="E_{p}(\mbox{\#\{pontos triplos especiais em $Q_{n-1}$}\})=(2n-1)^{d}\rho," display="block"><semantics><mrow><msub><mi>E</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mrow><mtext>#{pontos triplos especiais em </mtext><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msup><mi></mi><mi>d</mi></msup><mi>ρ</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">E_{p}(\mbox{\#\{pontos triplos especiais em $Q_{n-1}$}\})=(2n-1)^{d}\rho,</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.13)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">logo</p>
+<div id="E14" class="ltx_equation ltx_eqn_div">
+<span><math id="E14.m1" class="ltx_math_unparsed" alttext="P_{p}[\mbox{\#(pontos triplos especiais em $Q_{n-1}$})\geq(2n-1)^{d}\rho)]&gt;0" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">[</mo><mrow><mtext>#(pontos triplos especiais em </mtext><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mo>≥</mo><msup><mrow><mo stretchy="false">(</mo><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mi>d</mi></msup><mi>ρ</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}[\mbox{\#(pontos triplos especiais em $Q_{n-1}$})\geq(2n-1)^{d}\rho)]&gt;0</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.14)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para todo <math id="p25.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> (pois, para toda variável aleatória integrável X,</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_math_unparsed" alttext="P(X\geq E(X))&gt;0)." display="block"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>≥</mo><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo stretchy="false">)</mo><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P(X\geq E(X))&gt;0).</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p26" class="ltx_para">
+<p class="ltx_p">Por outro lado, é uma conseqüência do exercício acima que o número de pontos
+triplos especiais em <math id="p26.m1" class="ltx_Math" alttext="Q_{n-1}" display="inline"><semantics><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">Q_{n-1}</annotation></semantics></math> é inferior a <math id="p26.m2" class="ltx_Math" alttext="2d(2n-1)^{d-1}" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>d</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2d(2n-1)^{d-1}</annotation></semantics></math> para toda
+configuração de <math id="p26.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e todo <math id="p26.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, o que contradiz
+(<a href="#E14" title="In Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.14</span></a>) para <math id="p26.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> suficientemente grande.
+Da contradição segue o resultado.</p>
+</div>
+<div id="p27" class="ltx_para">
+<p class="ltx_p">Vamos agora argumentar a afirmação no começo do parágrafo anterior.
+Cada ramo de cada ponto triplo especial (pte) toca um (ou mais) sítios
+em alguma face de <math id="p27.m1" class="ltx_Math" alttext="\partial Q_{n}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>Q</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\partial Q_{n}</annotation></semantics></math> (<math id="p27.m2" class="ltx_Math" alttext="2d(2n-1)^{d-1}" display="inline"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>d</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2d(2n-1)^{d-1}</annotation></semantics></math> é o total de
+sítios em <math id="p27.m3" class="ltx_Math" alttext="\partial Q_{n}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>Q</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\partial Q_{n}</annotation></semantics></math>).</p>
+</div>
+<div id="p28" class="ltx_para">
+<p class="ltx_p">Considere os componentes conexos dos pte’s usando apenas elos no interior
+de <math id="p28.m1" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math>. Digamos que cada componente contenha <math id="p28.m2" class="ltx_Math" alttext="n_{1},n_{2},\ldots" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">n_{1},n_{2},\ldots</annotation></semantics></math> pte’s
+cada (isto é, o <math id="p28.m3" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-ésimo componente contem <math id="p28.m4" class="ltx_Math" alttext="n_{i}" display="inline"><semantics><msub><mi>n</mi><mi>i</mi></msub><annotation encoding="application/x-tex">n_{i}</annotation></semantics></math> pte’s). Logo</p>
+<div id="E15" class="ltx_equation ltx_eqn_div">
+<span><math id="E15.m1" class="ltx_Math" alttext="n_{1}+n_{2}+\ldots" display="block"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">n_{1}+n_{2}+\ldots</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.15)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">dá o total de pte’s em <math id="p28.m5" class="ltx_Math" alttext="Q_{n-1}" display="inline"><semantics><msub><mi>Q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">Q_{n-1}</annotation></semantics></math>.
+Usando a linguagem do exercício acima, cada componente contem <math id="p28.m6" class="ltx_Math" alttext="n_{i}" display="inline"><semantics><msub><mi>n</mi><mi>i</mi></msub><annotation encoding="application/x-tex">n_{i}</annotation></semantics></math> pontos
+triplos. Daquele resultado sabemos que podemos achar pelo menos <math id="p28.m7" class="ltx_Math" alttext="n_{i}+2" display="inline"><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n_{i}+2</annotation></semantics></math>
+ramos distintos dentre as <math id="p28.m8" class="ltx_Math" alttext="3n_{i}" display="inline"><semantics><mrow><mn>3</mn><mo>⁢</mo><msub><mi>n</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">3n_{i}</annotation></semantics></math> possibilidades. Portanto, podemos achar</p>
+<div id="E16" class="ltx_equation ltx_eqn_div">
+<span><math id="E16.m1" class="ltx_Math" alttext="(n_{1}+2)+(n_{2}+2)+\ldots" display="block"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">(n_{1}+2)+(n_{2}+2)+\ldots</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.16)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">ramos distintos de todos os pontos triplos. Como cada um toca pelo menos
+um ponto das faces de <math id="p28.m9" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math>, será necessário que</p>
+<div id="E17" class="ltx_equation ltx_eqn_div">
+<span><math id="E17.m1" class="ltx_Math" alttext="n_{1}+n_{2}+\ldots\leq(n_{1}+2)+(n_{2}+2)+\ldots\leq 2d(2n-1)^{d-1}," display="block"><semantics><mrow><mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>≤</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>d</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">n_{1}+n_{2}+\ldots\leq(n_{1}+2)+(n_{2}+2)+\ldots\leq 2d(2n-1)^{d-1},</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.17)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">como queríamos mostrar. <math id="p28.m10" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="p29" class="ltx_para">
+<p class="ltx_p">A seguir, apresentamos alguns corolários do Teorema <a href="#ThmTeo1" title="Teorema 4.1 ‣ Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a>.
+Lembramos que <math id="p29.m1" class="ltx_Math" alttext="\tau_{p}(x,y)" display="inline"><semantics><mrow><msub><mi>τ</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\tau_{p}(x,y)</annotation></semantics></math> é a função de conectividade dos sítios
+<math id="p29.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e <math id="p29.m3" class="ltx_Math" alttext="y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>, isto é,</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_math_unparsed" alttext="\tau_{p}(x,y)=P_{p}(x\leftrightarrow y)." display="block"><semantics><mrow><msub><mi>τ</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">↔</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\tau_{p}(x,y)=P_{p}(x\leftrightarrow y).</annotation></semantics></math></span>
+</div>
+</div>
+<div id="ThmCor1" class="ltx_theorem ltx_theorem_Cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolário 4.1</span></span></h6>
+<div id="ThmCor1.p1" class="ltx_para">
+<div id="E18" class="ltx_equation ltx_eqn_div">
+<span><math id="E18.m1" class="ltx_Math" alttext="\tau_{p}(x,y)\geq[\theta(p)]^{2}" display="block"><semantics><mrow><mrow><msub><mi>τ</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><msup><mrow><mo stretchy="false">[</mo><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\tau_{p}(x,y)\geq[\theta(p)]^{2}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.18)</span>
+            
+            
+          
+</div>
+</div>
+</div>
+<div id="p30" class="ltx_para">
+<p class="ltx_p">O resultado acima tem como conseqüência que, na fase supercrítica,
+a função de conectividade entre
+dois pontos não decai quando a distância entre eles cresce.</p>
+</div>
+<div id="p31" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova</span></p>
+</div>
+<div id="p32" class="ltx_para">
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx22" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex14">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex13.m1" class="ltx_Math" alttext="\displaystyle\tau_{p}(x,y)" display="inline"><semantics><mrow><msub><mi>τ</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\tau_{p}(x,y)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex13.m2" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex13.m3" class="ltx_Math" alttext="\displaystyle P_{p}(\mbox{$x$ e $y$ estão no mesmo aglomerado infinito})" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mtext> e </mtext><mi>y</mi><mtext> estão no mesmo aglomerado infinito</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(\mbox{$x$ e $y$ estão no mesmo aglomerado infinito})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex14.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex14.m2" class="ltx_Math" alttext="\displaystyle P_{p}(|C_{x}|=|C_{y}|=\infty)\geq P_{p}(|C_{x}|=\infty)P_{p}(|C_%
+{y}|=\infty)=\theta(p)^{2}," display="inline"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>x</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>y</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>x</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>y</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>θ</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(|C_{x}|=|C_{y}|=\infty)\geq P_{p}(|C_{x}|=\infty)P_{p}(|C_%
+{y}|=\infty)=\theta(p)^{2},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">onde a primeira igualdade deve-se ao Teorema <a href="#ThmTeo1" title="Teorema 4.1 ‣ Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a> e a última
+desigualdade é FKG. <math id="p32.m1" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="ThmCor2" class="ltx_theorem ltx_theorem_Cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolário 4.2</span></span></h6>
+<div id="ThmCor2.p1" class="ltx_para">
+<p class="ltx_p"><math id="ThmCor2.p1.m1" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é contínua à esquerda em <math id="ThmCor2.p1.m2" class="ltx_Math" alttext="(p_{c},1]" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>p</mi><mi>c</mi></msub><mo>⁢</mo><mn>,1</mn></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">(p_{c},1]</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p33" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova</span></p>
+</div>
+<div id="p34" class="ltx_para">
+<p class="ltx_p">Vamos construir modelos de percolação para todo <math id="p34.m1" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math> acoplados
+usando uma família de variáveis i.i.d. Uniformes em <math id="p34.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+<math id="p34.m3" class="ltx_Math" alttext="\{Z_{e},e\in\mathbb{E}^{d}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><msub><mi>Z</mi><mi>e</mi></msub><mo>,</mo><mi>e</mi></mrow><mo>∈</mo><msup><mi>𝔼</mi><mi>d</mi></msup></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{Z_{e},e\in\mathbb{E}^{d}\}</annotation></semantics></math> declarando um elo <math id="p34.m4" class="ltx_Math" alttext="e" display="inline"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math> <math id="p34.m5" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-aberto se <math id="p34.m6" class="ltx_Math" alttext="Z_{e}&lt;p" display="inline"><semantics><mrow><msub><mi>Z</mi><mi>e</mi></msub><mo>&lt;</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">Z_{e}&lt;p</annotation></semantics></math>
+(como na prova da monotonicidade de <math id="p34.m7" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math>). Seja <math id="p34.m8" class="ltx_Math" alttext="C_{p}" display="inline"><semantics><msub><mi>C</mi><mi>p</mi></msub><annotation encoding="application/x-tex">C_{p}</annotation></semantics></math> o aglomerado
+da origem com elos <math id="p34.m9" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-abertos.</p>
+</div>
+<div id="p35" class="ltx_para">
+<p class="ltx_p">Se <math id="p35.m1" class="ltx_Math" alttext="\pi\leq p" display="inline"><semantics><mrow><mi>π</mi><mo>≤</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\pi\leq p</annotation></semantics></math> então <math id="p35.m2" class="ltx_Math" alttext="C_{\pi}\subset C_{p}" display="inline"><semantics><mrow><msub><mi>C</mi><mi>π</mi></msub><mo>⊂</mo><msub><mi>C</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">C_{\pi}\subset C_{p}</annotation></semantics></math> e</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx23" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex16">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex15.m1" class="ltx_Math" alttext="\displaystyle\lim_{\pi\uparrow p}\theta(\pi)" display="inline"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>π</mi><mo stretchy="false">↑</mo><mi>p</mi></mrow></munder><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\lim_{\pi\uparrow p}\theta(\pi)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex15.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex15.m3" class="ltx_Math" alttext="\displaystyle\lim_{\pi\uparrow p}\mathbb{P}(|C_{\pi}|=\infty)" display="inline"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>π</mi><mo stretchy="false">↑</mo><mi>p</mi></mrow></munder><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>π</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\lim_{\pi\uparrow p}\mathbb{P}(|C_{\pi}|=\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex16.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex16.m2" class="ltx_Math" alttext="\displaystyle\mathbb{P}(\cup_{\pi&lt;p}\{|C_{\pi}|=\infty\})." display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mo lspace="0em">∪</mo><mrow><mi>π</mi><mo>&lt;</mo><mi>p</mi></mrow></msub><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>π</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(\cup_{\pi&lt;p}\{|C_{\pi}|=\infty\}).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="p36" class="ltx_para">
+<p class="ltx_p">Queremos mostrar que a última probabilidade acima vale <math id="p36.m1" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math>.
+Consideremos então</p>
+<div id="E19" class="ltx_equation ltx_eqn_div">
+<span><math id="E19.m1" class="ltx_Math" alttext="\theta(p)-\mathbb{P}(\cup_{\pi&lt;p}\{|C_{\pi}|=\infty\})=\mathbb{P}(|C_{p}|=%
+\infty,|C_{\pi}|&lt;\infty\,\forall\,\pi&lt;p)" display="block"><semantics><mrow><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mo lspace="0em">∪</mo><mrow><mi>π</mi><mo>&lt;</mo><mi>p</mi></mrow></msub><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>π</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>p</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>π</mi></msub><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mi mathvariant="normal">∞</mi><mo lspace="0.337em">⁢</mo><mrow><mo rspace="0.337em">∀</mo><mi>π</mi></mrow></mrow><mo>&lt;</mo><mi>p</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\theta(p)-\mathbb{P}(\cup_{\pi&lt;p}\{|C_{\pi}|=\infty\})=\mathbb{P}(|C_{p}|=%
+\infty,|C_{\pi}|&lt;\infty\,\forall\,\pi&lt;p)</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.19)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para <math id="p36.m2" class="ltx_Math" alttext="p&gt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&gt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&gt;p_{c}</annotation></semantics></math>.
+Para concluirmos que a última expressão é nula, basta argumentarmos que
+se <math id="p36.m3" class="ltx_Math" alttext="|C_{p}|=\infty" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>p</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">|C_{p}|=\infty</annotation></semantics></math> e o aglomerado infinito <math id="p36.m4" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-aberto for único, então
+<math id="p36.m5" class="ltx_Math" alttext="|C_{\pi}|=\infty" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>π</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">|C_{\pi}|=\infty</annotation></semantics></math> para algum <math id="p36.m6" class="ltx_Math" alttext="\pi&lt;p" display="inline"><semantics><mrow><mi>π</mi><mo>&lt;</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\pi&lt;p</annotation></semantics></math>.</p>
+</div>
+<div id="p37" class="ltx_para">
+<p class="ltx_p">De fato, nestas condições, tome <math id="p37.m1" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> satisfazendo <math id="p37.m2" class="ltx_Math" alttext="p_{c}&lt;\alpha&lt;p" display="inline"><semantics><mrow><msub><mi>p</mi><mi>c</mi></msub><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p_{c}&lt;\alpha&lt;p</annotation></semantics></math>. Então,
+quase certamente existe um aglomerado infinito <math id="p37.m3" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>-aberto, <math id="p37.m4" class="ltx_Math" alttext="I_{\alpha}" display="inline"><semantics><msub><mi>I</mi><mi>α</mi></msub><annotation encoding="application/x-tex">I_{\alpha}</annotation></semantics></math>, que
+precisa satisfazer <math id="p37.m5" class="ltx_Math" alttext="I_{\alpha}\subset C_{p}" display="inline"><semantics><mrow><msub><mi>I</mi><mi>α</mi></msub><mo>⊂</mo><msub><mi>C</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">I_{\alpha}\subset C_{p}</annotation></semantics></math> (pois do contrário haveria dois aglomerados
+infinitos de elos <math id="p37.m6" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-abertos!).</p>
+</div>
+<div id="p38" class="ltx_para">
+<p class="ltx_p">Logo, existe um caminho finito de elos <math id="p38.m1" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-abertos <math id="p38.m2" class="ltx_Math" alttext="\gamma" display="inline"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math> ligando a origem a
+<math id="p38.m3" class="ltx_Math" alttext="I_{\alpha}" display="inline"><semantics><msub><mi>I</mi><mi>α</mi></msub><annotation encoding="application/x-tex">I_{\alpha}</annotation></semantics></math>. Como <math id="p38.m4" class="ltx_Math" alttext="\gamma" display="inline"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math> é finito e cada elo <math id="p38.m5" class="ltx_Math" alttext="e" display="inline"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math> nele tem <math id="p38.m6" class="ltx_Math" alttext="Z_{e}&lt;p" display="inline"><semantics><mrow><msub><mi>Z</mi><mi>e</mi></msub><mo>&lt;</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">Z_{e}&lt;p</annotation></semantics></math>, então</p>
+<div id="Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex17.m1" class="ltx_Math" alttext="\mu=\max\{Z_{e},\,e\in\gamma\}&lt;p." display="block"><semantics><mrow><mrow><mi>μ</mi><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>Z</mi><mi>e</mi></msub><mo rspace="0.337em">,</mo><mrow><mi>e</mi><mo>∈</mo><mi>γ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>&lt;</mo><mi>p</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mu=\max\{Z_{e},\,e\in\gamma\}&lt;p.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Se <math id="p38.m7" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math> for tal que
+<math id="p38.m8" class="ltx_Math" alttext="\pi\geq\alpha" display="inline"><semantics><mrow><mi>π</mi><mo>≥</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\pi\geq\alpha</annotation></semantics></math> e <math id="p38.m9" class="ltx_Math" alttext="\mu&lt;\pi&lt;p" display="inline"><semantics><mrow><mi>μ</mi><mo>&lt;</mo><mi>π</mi><mo>&lt;</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\mu&lt;\pi&lt;p</annotation></semantics></math>, então <math id="p38.m10" class="ltx_Math" alttext="I_{\alpha}" display="inline"><semantics><msub><mi>I</mi><mi>α</mi></msub><annotation encoding="application/x-tex">I_{\alpha}</annotation></semantics></math> e <math id="p38.m11" class="ltx_Math" alttext="\gamma" display="inline"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math> são <math id="p38.m12" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>-abertos.
+Portanto <math id="p38.m13" class="ltx_Math" alttext="|C_{\pi}|=\infty" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>C</mi><mi>π</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">|C_{\pi}|=\infty</annotation></semantics></math>.<math id="p38.m14" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="p39" class="ltx_para">
+<p class="ltx_p">O resultado acima, junto com o seguinte (que não é corolário da unicidade do
+aglomerado infinito) nos diz que <math id="p39.m1" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math> é contínua em <math id="p39.m2" class="ltx_Math" alttext="(p_{c},1]" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>p</mi><mi>c</mi></msub><mo>⁢</mo><mn>,1</mn></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">(p_{c},1]</annotation></semantics></math>.</p>
+</div>
+<div id="ThmProp3" class="ltx_theorem ltx_theorem_Prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 4.3</span></span></h6>
+<div id="ThmProp3.p1" class="ltx_para">
+<p class="ltx_p"><math id="ThmProp3.p1.m1" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é contínua à direita.</span></p>
+</div>
+</div>
+<div id="p40" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova</span></p>
+</div>
+<div id="p41" class="ltx_para">
+<p class="ltx_p">Seja <math id="p41.m1" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math> o evento de que a origem está ligada à fronteira de <math id="p41.m2" class="ltx_Math" alttext="S_{n}" display="inline"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math> por um
+caminho aberto. <math id="p41.m3" class="ltx_Math" alttext="(A_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{n})_{n\geq 1}</annotation></semantics></math> é uma seqüência decrescente e</p>
+<div id="Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex18.m1" class="ltx_Math" alttext="P_{p}(A_{n})\downarrow\theta(p)" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">↓</mo><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">P_{p}(A_{n})\downarrow\theta(p)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">quando <math id="p41.m4" class="ltx_Math" alttext="n\uparrow\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">↑</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\uparrow\infty</annotation></semantics></math>. <math id="p41.m5" class="ltx_Math" alttext="P_{p}(A_{n})" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{p}(A_{n})</annotation></semantics></math> é contínua em <math id="p41.m6" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+(pois é um polinômio) e,
+usando o modelo padrão do Capítulo 1, é fácil ver também que é crescente nesta
+variável. Logo, <math id="p41.m7" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math> é o limite decrescente de funções contínuas crescentes.
+Um resultado de análise sobre funções semi-contínuas inferiores (ou um
+argumento direto) nos dá o resultado. <math id="p41.m8" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="ThmObs1" class="ltx_theorem ltx_theorem_Obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 4.1</span></span></h6>
+<div id="ThmObs1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Como conseqüência dos dois últimos resultados, temos que <math id="ThmObs1.p1.m1" class="ltx_Math" alttext="\theta(p)" display="inline"><semantics><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta(p)</annotation></semantics></math> será contínua
+em <math id="ThmObs1.p1.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math> se e somente se <math id="ThmObs1.p1.m3" class="ltx_Math" alttext="\theta(p_{c})=0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mi>c</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p_{c})=0</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p42" class="ltx_para">
+<p class="ltx_p">Para o próximo corolário, vamos dizer que ocorre um <span class="ltx_text ltx_font_italic">cruzamento da esquerda para
+a direita</span> no cubo <math id="p42.m1" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math> se houver um caminho de elos abertos contidos em <math id="p42.m2" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math>
+ligando a face esquerda de <math id="p42.m3" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math> a sua face direita. Denotemos por <math id="p42.m4" class="ltx_Math" alttext="ED_{n}" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">ED_{n}</annotation></semantics></math> o
+evento de que tal cruzamento ocorre. <math id="p42.m5" class="ltx_Math" alttext="ED_{n}" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">ED_{n}</annotation></semantics></math> poderia ser visto como uma versão
+a volume finito do evento de que há percolação. É uma decorrência do decaimento
+exponencial do raio de <math id="p42.m6" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> na fase subcrítica que <math id="p42.m7" class="ltx_Math" alttext="P_{p}(ED_{n})\to 0" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(ED_{n})\to 0</annotation></semantics></math> quando <math id="p42.m8" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>
+neste caso (verifique). O caso supercrítico será tratado no próximo resultado.</p>
+</div>
+<div id="ThmCor3" class="ltx_theorem ltx_theorem_Cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolário 4.3</span></span></h6>
+<div id="ThmCor3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="ThmCor3.p1.m1" class="ltx_Math" alttext="\theta(p)&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p)&gt;0</annotation></semantics></math>, então</span></p>
+<div id="E20" class="ltx_equation ltx_eqn_div">
+<span><math id="E20.m1" class="ltx_Math" alttext="P_{p}(ED_{n})\to 1" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P_{p}(ED_{n})\to 1</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.20)</span>
+            
+            
+          
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">quando <math id="ThmCor3.p1.m2" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p43" class="ltx_para">
+<p class="ltx_p">Veremos no próximo capítulo que em <math id="p43.m1" class="ltx_Math" alttext="p=p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>=</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p=p_{c}</annotation></semantics></math> um evento similar a <math id="p43.m2" class="ltx_Math" alttext="ED_{n}" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">ED_{n}</annotation></semantics></math>
+tem probabilidade que não converge
+nem para 0 nem para 1 quando <math id="p43.m3" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>.</p>
+</div>
+<div id="p44" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova</span></p>
+</div>
+<div id="p45" class="ltx_para">
+<p class="ltx_p">Seja <math id="p45.m1" class="ltx_Math" alttext="I_{m}" display="inline"><semantics><msub><mi>I</mi><mi>m</mi></msub><annotation encoding="application/x-tex">I_{m}</annotation></semantics></math> o evento de que algum sítio de <math id="p45.m2" class="ltx_Math" alttext="Q_{m}" display="inline"><semantics><msub><mi>Q</mi><mi>m</mi></msub><annotation encoding="application/x-tex">Q_{m}</annotation></semantics></math> está num aglomerado infinito.
+Dado <math id="p45.m3" class="ltx_Math" alttext="\epsilon&gt;0" display="inline"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>, escolha <math id="p45.m4" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> grande o suficiente para que</p>
+<div id="E21" class="ltx_equation ltx_eqn_div">
+<span><math id="E21.m1" class="ltx_Math" alttext="P_{p}(I_{m})&gt;1-\epsilon" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>I</mi><mi>m</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mn>1</mn><mo>−</mo><mi>ϵ</mi></mrow></mrow><annotation encoding="application/x-tex">P_{p}(I_{m})&gt;1-\epsilon</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.21)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">(isto é possível pela discussão nos primeiros parágrafos do capítulo).</p>
+</div>
+<div id="p46" class="ltx_para">
+<p class="ltx_p">Temos que, para <math id="p46.m1" class="ltx_Math" alttext="n\geq m" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\geq m</annotation></semantics></math></p>
+<div id="E22" class="ltx_equation ltx_eqn_div">
+<span><math id="E22.m1" class="ltx_math_unparsed" alttext="I_{m}\subset\cup_{i=1}^{2d}\left\{Q_{m}\leftrightarrow F_{i}\,\mbox{em}\,Q_{n}%
+\right\}," display="block"><semantics><mrow><msub><mi>I</mi><mi>m</mi></msub><mo rspace="0em">⊂</mo><msubsup><mo lspace="0em">∪</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow></msubsup><mrow><mo>{</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><msub><mi>F</mi><mi>i</mi></msub><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo>}</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">I_{m}\subset\cup_{i=1}^{2d}\left\{Q_{m}\leftrightarrow F_{i}\,\mbox{em}\,Q_{n}%
+\right\},</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.22)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">onde <math id="p46.m2" class="ltx_Math" alttext="F_{1},\ldots,F_{2d}" display="inline"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>F</mi><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">F_{1},\ldots,F_{2d}</annotation></semantics></math> são as faces de <math id="p46.m3" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math>.</p>
+</div>
+<div id="p47" class="ltx_para">
+<p class="ltx_p">Logo</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx24" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="E23">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex19.m1" class="ltx_Math" alttext="\displaystyle 1-P_{p}(I_{m})" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>I</mi><mi>m</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 1-P_{p}(I_{m})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex19.m2" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex19.m3" class="ltx_math_unparsed" alttext="\displaystyle 1-P_{p}\left(\cup_{i=1}^{2d}\left\{Q_{m}\leftrightarrow F_{i}\,%
+\mbox{em}\,Q_{n}\right\}\right)" display="inline"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo>(</mo><msubsup><mo lspace="0em">∪</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow></msubsup><mrow><mo>{</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><msub><mi>F</mi><mi>i</mi></msub><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo>}</mo></mrow><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 1-P_{p}\left(\cup_{i=1}^{2d}\left\{Q_{m}\leftrightarrow F_{i}\,%
+\mbox{em}\,Q_{n}\right\}\right)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.23)</span></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex20.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex20.m2" class="ltx_math_unparsed" alttext="\displaystyle P_{p}\left(\cap_{i=1}^{2d}\left\{Q_{m}\leftrightarrow F_{i}\,%
+\mbox{em}\,Q_{n}\right\}^{c}\right)" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo>(</mo><msubsup><mo lspace="0em">∩</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow></msubsup><msup><mrow><mo>{</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><msub><mi>F</mi><mi>i</mi></msub><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo>}</mo></mrow><mi>c</mi></msup><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}\left(\cap_{i=1}^{2d}\left\{Q_{m}\leftrightarrow F_{i}\,%
+\mbox{em}\,Q_{n}\right\}^{c}\right)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="E23.m2" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E23.m3" class="ltx_math_unparsed" alttext="\displaystyle\left[1-P_{p}\left(Q_{m}\leftrightarrow F\,\mbox{em}\,Q_{n}\right%
+)\right]^{2d}," display="inline"><semantics><mrow><msup><mrow><mo>[</mo><mn>1</mn><mo>−</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo>(</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><mi>F</mi><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo>)</mo></mrow><mo>]</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow></msup><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\left[1-P_{p}\left(Q_{m}\leftrightarrow F\,\mbox{em}\,Q_{n}\right%
+)\right]^{2d},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">onde <math id="p47.m1" class="ltx_Math" alttext="F\in\{F_{1},\ldots,F_{2d}\}" display="inline"><semantics><mrow><mi>F</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><msub><mi>F</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>F</mi><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">F\in\{F_{1},\ldots,F_{2d}\}</annotation></semantics></math> e a última desigualdade segue de
+FKG pelo fato de que os eventos
+na intersecção são decrescentes e também do fato que estes eventos
+têm a mesma probabilidade (vide prova do Lema <a href="Ch5.html#ThmLem1" title="Lema 5.1 ‣ Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.1</span></a> na
+página <a href="Ch5.html#ThmLem1" title="Lema 5.1 ‣ Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.1</span></a>).</p>
+</div>
+<div id="p48" class="ltx_para">
+<p class="ltx_p">De (<a href="#E21" title="In Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.21</span></a>) e (<a href="#E23" title="In Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.23</span></a>), temos que</p>
+<div id="E24" class="ltx_equation ltx_eqn_div">
+<span><math id="E24.m1" class="ltx_math_unparsed" alttext="P_{p}\left(Q_{m}\leftrightarrow F\,\mbox{em}\,Q_{n}\right)\geq 1-\epsilon^{1/{%
+2d}}" display="block"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo>(</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><mi>F</mi><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo>)</mo></mrow><mo>≥</mo><mn>1</mn><mo>−</mo><msup><mi>ϵ</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>d</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P_{p}\left(Q_{m}\leftrightarrow F\,\mbox{em}\,Q_{n}\right)\geq 1-\epsilon^{1/{%
+2d}}</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.24)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p49" class="ltx_para">
+<p class="ltx_p">Sejam <math id="p49.m1" class="ltx_Math" alttext="F_{e}" display="inline"><semantics><msub><mi>F</mi><mi>e</mi></msub><annotation encoding="application/x-tex">F_{e}</annotation></semantics></math> e <math id="p49.m2" class="ltx_Math" alttext="F_{d}" display="inline"><semantics><msub><mi>F</mi><mi>d</mi></msub><annotation encoding="application/x-tex">F_{d}</annotation></semantics></math> as faces esquerda e direita de <math id="p49.m3" class="ltx_Math" alttext="Q_{n}" display="inline"><semantics><msub><mi>Q</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Q_{n}</annotation></semantics></math> respectivamente.
+Por FKG e (<a href="#E24" title="In Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.24</span></a>),</p>
+<div id="E25" class="ltx_equation ltx_eqn_div">
+<span><math id="E25.m1" class="ltx_math_unparsed" alttext="P_{p}\left(\{Q_{m}\leftrightarrow F_{e}\,\mbox{em}\,Q_{n}\}\cap\{Q_{m}%
+\leftrightarrow F_{d}\,\mbox{em}\,Q_{n}\}\right)\geq(1-\epsilon^{1/{2d}})^{2}" display="block"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo>(</mo><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><msub><mi>F</mi><mi>e</mi></msub><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><msub><mi>F</mi><mi>d</mi></msub><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mo>)</mo></mrow><mo>≥</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msup><mi>ϵ</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>d</mi></mrow></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">P_{p}\left(\{Q_{m}\leftrightarrow F_{e}\,\mbox{em}\,Q_{n}\}\cap\{Q_{m}%
+\leftrightarrow F_{d}\,\mbox{em}\,Q_{n}\}\right)\geq(1-\epsilon^{1/{2d}})^{2}</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.25)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p50" class="ltx_para">
+<p class="ltx_p">Seja agora <math id="p50.m1" class="ltx_Math" alttext="A_{m,n}" display="inline"><semantics><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">A_{m,n}</annotation></semantics></math> o evento de que há 2 sítios em <math id="p50.m2" class="ltx_Math" alttext="\partial Q_{m}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>Q</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\partial Q_{m}</annotation></semantics></math> em 2 aglomerados
+abertos disjuntos, ambos tocando <math id="p50.m3" class="ltx_Math" alttext="\partial Q_{n}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>Q</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\partial Q_{n}</annotation></semantics></math>. Temos que <math id="p50.m4" class="ltx_Math" alttext="A_{m,n}\supset A_{m,n+1}" display="inline"><semantics><mrow><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>⊃</mo><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow></msub></mrow><annotation encoding="application/x-tex">A_{m,n}\supset A_{m,n+1}</annotation></semantics></math> e
+<math id="p50.m5" class="ltx_Math" alttext="A_{m,n}\downarrow A_{m}" display="inline"><semantics><mrow><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false">↓</mo><msub><mi>A</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">A_{m,n}\downarrow A_{m}</annotation></semantics></math> quando <math id="p50.m6" class="ltx_Math" alttext="n\uparrow\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">↑</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\uparrow\infty</annotation></semantics></math>, onde <math id="p50.m7" class="ltx_Math" alttext="A_{m}" display="inline"><semantics><msub><mi>A</mi><mi>m</mi></msub><annotation encoding="application/x-tex">A_{m}</annotation></semantics></math> é o evento de que
+há 2 aglomerados abertos infinitos disjuntos tocando <math id="p50.m8" class="ltx_Math" alttext="Q_{m}" display="inline"><semantics><msub><mi>Q</mi><mi>m</mi></msub><annotation encoding="application/x-tex">Q_{m}</annotation></semantics></math>.</p>
+</div>
+<figure id="F3" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x9.png" id="F3.g1" class="ltx_graphics ltx_img_square" width="269" height="244" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 4.3: </span>O evento <math id="F3.m2" class="ltx_Math" alttext="A_{m,n}" display="inline"><semantics><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">A_{m,n}</annotation></semantics></math></figcaption>
+</figure>
+<div id="p51" class="ltx_para">
+<p class="ltx_p">Em conclusão</p>
+<div id="E26" class="ltx_equation ltx_eqn_div">
+<span><math id="E26.m1" class="ltx_Math" alttext="P_{p}(A_{m,n})\to P_{p}(A_{m})=0" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>m</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{p}(A_{m,n})\to P_{p}(A_{m})=0</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.26)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">quando <math id="p51.m1" class="ltx_Math" alttext="n\to\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math> e portanto, de</p>
+<div id="E27" class="ltx_equation ltx_eqn_div">
+<span><math id="E27.m1" class="ltx_Math" alttext="P_{p}(ED_{n})\geq(1-\epsilon^{1/{2d}})^{2}-P_{p}(A_{m,n})," display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>ϵ</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>d</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P_{p}(ED_{n})\geq(1-\epsilon^{1/{2d}})^{2}-P_{p}(A_{m,n}),</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.27)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">que decorre de</p>
+<div id="E28" class="ltx_equation ltx_eqn_div">
+<span><math id="E28.m1" class="ltx_math_unparsed" alttext="\{Q_{m}\leftrightarrow F_{e}\,\mbox{em}\,Q_{n}\}\cap\{Q_{m}\leftrightarrow F_{%
+d}\,\mbox{em}\,Q_{n}\}\subset ED_{n}\cup A_{m,n}," display="block"><semantics><mrow><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><msub><mi>F</mi><mi>e</mi></msub><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi>m</mi></msub><mo stretchy="false">↔</mo><msub><mi>F</mi><mi>d</mi></msub><mtext>em</mtext><msub><mi>Q</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mo>⊂</mo><mi>E</mi><msub><mi>D</mi><mi>n</mi></msub><mo>∪</mo><msub><mi>A</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>,</mo></mrow><annotation encoding="application/x-tex">\{Q_{m}\leftrightarrow F_{e}\,\mbox{em}\,Q_{n}\}\cap\{Q_{m}\leftrightarrow F_{%
+d}\,\mbox{em}\,Q_{n}\}\subset ED_{n}\cup A_{m,n},</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.28)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">temos</p>
+<div id="E29" class="ltx_equation ltx_eqn_div">
+<span><math id="E29.m1" class="ltx_Math" alttext="\liminf_{n\to\infty}P_{p}(ED_{n})\geq(1-\epsilon^{1/{2d}})^{2}" display="block"><semantics><mrow><mrow><munder><mo movablelimits="false">lim inf</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo>⁢</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≥</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>ϵ</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>d</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\liminf_{n\to\infty}P_{p}(ED_{n})\geq(1-\epsilon^{1/{2d}})^{2}</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.29)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">e o resultado segue de <math id="p51.m2" class="ltx_Math" alttext="\epsilon" display="inline"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math> ser arbitrário. <math id="p51.m3" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "per.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

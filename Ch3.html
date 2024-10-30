@@ -1,0 +1,1162 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação</title>
+<!--Generated on Thu Sep  5 14:58:45 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 12; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-per.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Notas em Percolação">
+<link rel="start" href="index.html" title="Notas em Percolação">
+<link rel="prev" href="Ch2.S3.html" title="2.3 Fórmula de Russo ‣ Capítulo 2 Ferramentas úteis ‣ Notas em Percolação">
+<link rel="next" href="Ch4.html" title="Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Introdução ‣ Notas em Percolação">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Ferramentas úteis ‣ Notas em Percolação">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Fase Supercrítica: Unicidade do Aglomerado Infinito ‣ Notas em Percolação">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 O Modelo em 2 Dimensões: Dualidade ‣ Notas em Percolação">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação">
+<link rel="appendix" href="A1.html" title="Apêndice A Prova a um lema do Capítulo 3 ‣ Notas em Percolação">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas em Percolação">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas em Percolação</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Introdução</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Ferramentas úteis</a></li>
+<li data-level="3" data-path="" class="ltx_tocentry ltx_tocentry_chapter ltx_ref_self  chapter active"><a href="" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Fase Subcrítica: Decaimento Exponencial</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Fase Supercrítica: Unicidade do Aglomerado Infinito</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>O Modelo em 2 Dimensões: Dualidade</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Continuidade no Ponto Crítico: Renormalização</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas em Percolação" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Prova a um lema do Capítulo 3</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas em Percolação" class="ltx_ref">Referências</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Fase Subcrítica: Decaimento Exponencial</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_chapter normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter header-section-number">Capítulo 3</span> Fase Subcrítica: Decaimento Exponencial</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Poderíamos definir outros pontos críticos no modelo de percolação. Por exemplo,
+lembrando que <math id="p1.m1" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> é o valor esperado do volume do aglomerado aberto da origem,
+seja</p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="\tilde{p}=\sup\{p:\chi_{p}&lt;\infty\}." display="block"><semantics><mrow><mrow><mover accent="true"><mi>p</mi><mo>~</mo></mover><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mo stretchy="false">{</mo><mi>p</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi>χ</mi><mi>p</mi></msub><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\tilde{p}=\sup\{p:\chi_{p}&lt;\infty\}.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">A prova da Proposição <a href="Ch1.S2.html#Thmprop1" title="Proposição 1.2.1 ‣ 1.2 Primeiros Resultados ‣ Capítulo 1 Introdução ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2.1</span></a> mostra que <math id="p1.m2" class="ltx_Math" alttext="\tilde{p}" display="inline"><semantics><mover accent="true"><mi>p</mi><mo>~</mo></mover><annotation encoding="application/x-tex">\tilde{p}</annotation></semantics></math> está bem definido e é
+positivo.
+É claro que <math id="p1.m3" class="ltx_Math" alttext="\tilde{p}\leq p_{c}" display="inline"><semantics><mrow><mover accent="true"><mi>p</mi><mo>~</mo></mover><mo>≤</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">\tilde{p}\leq p_{c}</annotation></semantics></math> (pois se <math id="p1.m4" class="ltx_math_unparsed" alttext="\theta(p)=P_{p}(|C|=\infty)&gt;0)" display="inline"><semantics><mrow><mi>θ</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>C</mi><mo fence="false" stretchy="false">|</mo><mo lspace="0.167em">=</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\theta(p)=P_{p}(|C|=\infty)&gt;0)</annotation></semantics></math> então <math id="p1.m5" class="ltx_Math" alttext="\chi_{p}=\infty" display="inline"><semantics><mrow><msub><mi>χ</mi><mi>p</mi></msub><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\chi_{p}=\infty</annotation></semantics></math>).</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Neste capítulo, veremos que <math id="p2.m1" class="ltx_Math" alttext="\tilde{p}=p_{c}" display="inline"><semantics><mrow><mover accent="true"><mi>p</mi><mo>~</mo></mover><mo>=</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">\tilde{p}=p_{c}</annotation></semantics></math>, eliminando a existência de uma fase
+intermediária <math id="p2.m2" class="ltx_Math" alttext="(\tilde{p},p_{c})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>p</mi><mo>~</mo></mover><mo>,</mo><msub><mi>p</mi><mi>c</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\tilde{p},p_{c})</annotation></semantics></math> e estabelecendo a assim chamada <span class="ltx_text ltx_font_italic">unicidade</span> do ponto
+crítico.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Este resultado foi provado independentemente por Menshikov <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib4" title="" class="ltx_ref">4</a>]</cite> e
+Aizenman e Barsky <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib5" title="" class="ltx_ref">5</a>]</cite> por argumentos diferentes (para <math id="p3.m1" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> geral; em 2 dimensões foi provado
+por Kesten <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib3" title="" class="ltx_ref">3</a>]</cite> como conseqüência de que, neste caso, <math id="p3.m2" class="ltx_Math" alttext="p_{c}=1/2" display="inline"><semantics><mrow><msub><mi>p</mi><mi>c</mi></msub><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">p_{c}=1/2</annotation></semantics></math>). Mostraremos a seguir o
+argumento de Menshikov (com uma melhoria de Kesten, não publicada).</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Sejam <math id="p4.m1" class="ltx_Math" alttext="S_{n}" display="inline"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math> a esfera <math id="p4.m2" class="ltx_Math" alttext="L_{1}" display="inline"><semantics><msub><mi>L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">L_{1}</annotation></semantics></math> em <math id="p4.m3" class="ltx_Math" alttext="\mathbb{Z}^{d}" display="inline"><semantics><msup><mi>ℤ</mi><mi>d</mi></msup><annotation encoding="application/x-tex">\mathbb{Z}^{d}</annotation></semantics></math> de raio <math id="p4.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> com centro na origem, isto é</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="S_{n}=\{x\in\mathbb{Z}^{d}:||x||_{1}\leq n\}" display="block"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℤ</mi><mi>d</mi></msup></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mn>1</mn></msub><mo>≤</mo><mi>n</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">S_{n}=\{x\in\mathbb{Z}^{d}:||x||_{1}\leq n\}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e <math id="p4.m5" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math> o evento de que existe um caminho
+aberto da origem à fronteira de <math id="p4.m6" class="ltx_Math" alttext="S_{n}" display="inline"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>.</p>
+</div>
+<div id="ThmTeo1" class="ltx_theorem ltx_theorem_Teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 3.1</span></span><span class="ltx_text ltx_font_bold"> (Menshikov)</span>
+</h6>
+<div id="ThmTeo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="ThmTeo1.p1.m1" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math>, então para algum <math id="ThmTeo1.p1.m2" class="ltx_Math" alttext="\psi_{p}&gt;0" display="inline"><semantics><mrow><msub><mi>ψ</mi><mi>p</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\psi_{p}&gt;0</annotation></semantics></math></span></p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="P_{p}(A_{n})\leq e^{-\psi_{p}n}\quad\mbox{para todo $n$.}" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><msub><mi>ψ</mi><mi>p</mi></msub><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mspace width="1.2em"></mspace><mrow><mtext class="ltx_mathvariant_italic">para todo </mtext><mi>n</mi><mtext class="ltx_mathvariant_italic">.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">P_{p}(A_{n})\leq e^{-\psi_{p}n}\quad\mbox{para todo $n$.}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2)</span>
+            
+            
+          
+</div>
+</div>
+</div>
+<div id="ThmCor1" class="ltx_theorem ltx_theorem_Cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolário 3.1</span></span></h6>
+<div id="ThmCor1.p1" class="ltx_para">
+<p class="ltx_p"><math id="ThmCor1.p1.m1" class="ltx_Math" alttext="\chi_{p}&lt;\infty" display="inline"><semantics><mrow><msub><mi>χ</mi><mi>p</mi></msub><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\chi_{p}&lt;\infty</annotation></semantics></math><span class="ltx_text ltx_font_italic"> se <math id="ThmCor1.p1.m2" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="ThmObs1" class="ltx_theorem ltx_theorem_Obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 3.1</span></span></h6>
+<div id="ThmObs1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Na fase supercrítica <math id="ThmObs1.p1.m1" class="ltx_Math" alttext="\chi_{p}=\infty" display="inline"><semantics><mrow><msub><mi>χ</mi><mi>p</mi></msub><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\chi_{p}=\infty</annotation></semantics></math>, obviamente.
+Prova-se também <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib8" title="" class="ltx_ref">8</a>]</cite> que</span></p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\lim_{p\uparrow p_{c}}\chi_{p}=\infty." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>p</mi><mo stretchy="false">↑</mo><msub><mi>p</mi><mi>c</mi></msub></mrow></munder><msub><mi>χ</mi><mi>p</mi></msub></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{p\uparrow p_{c}}\chi_{p}=\infty.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p5" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova do Corolário <a href="#ThmCor1" title="Corolário 3.1 ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>.</span></p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">O Teorema <a href="#ThmTeo1" title="Teorema 3.1 (Menshikov) ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a> estabelece o decaimento exponencial da distribuição
+do raio de <math id="p6.m1" class="ltx_Math" alttext="C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>.
+De (<a href="#E2" title="In Teorema 3.1 (Menshikov) ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>) concluimos que</p>
+<div id="E3" class="ltx_equation ltx_eqn_div">
+<span><math id="E3.m1" class="ltx_Math" alttext="P_{p}(|C|\geq n)\leq e^{-\psi_{p}^{\prime}n^{1/d}}," display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>C</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msubsup><mi>ψ</mi><mi>p</mi><mo>′</mo></msubsup><mo>⁢</mo><msup><mi>n</mi><mrow><mn>1</mn><mo>/</mo><mi>d</mi></mrow></msup></mrow></mrow></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P_{p}(|C|\geq n)\leq e^{-\psi_{p}^{\prime}n^{1/d}},</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.3)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">com <math id="p6.m2" class="ltx_Math" alttext="\psi_{p}^{\prime}&gt;0" display="inline"><semantics><mrow><msubsup><mi>ψ</mi><mi>p</mi><mo>′</mo></msubsup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\psi_{p}^{\prime}&gt;0</annotation></semantics></math>. Logo,</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_math_unparsed" alttext="\chi_{p}=\sum_{n\geq 1}P_{p}(|C|\geq n)&lt;\infty.\quad\triangle" display="block"><semantics><mrow><msub><mi>χ</mi><mi>p</mi></msub><mo rspace="0.111em">=</mo><munder><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></munder><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>C</mi><mo fence="false" stretchy="false">|</mo><mo lspace="0.167em">≥</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi><mo lspace="0em">.</mo><mspace width="1.367em"></mspace><mi mathvariant="normal">△</mi></mrow><annotation encoding="application/x-tex">\chi_{p}=\sum_{n\geq 1}P_{p}(|C|\geq n)&lt;\infty.\quad\triangle</annotation></semantics></math></span>
+</div>
+</div>
+<div id="ThmObs2" class="ltx_theorem ltx_theorem_Obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 3.2</span></span></h6>
+<div id="ThmObs2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">(<a href="#E3" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>) estabelece decaimento subexponencial da distribuição de
+<math id="ThmObs2.p1.m1" class="ltx_Math" alttext="|C|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>C</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|C|</annotation></semantics></math>. Com um pouco mais de trabalho, mostra-se o decaimento exponencial desta
+distribuição (vide <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib8" title="" class="ltx_ref">8</a>]</cite>).</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">A prova do Teorema <a href="#ThmTeo1" title="Teorema 3.1 (Menshikov) ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a> será apresentada em uma introdução mais
+três partes.</p>
+</div>
+<div id="p8" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Introdução</span></p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Defina</p>
+<div id="E4" class="ltx_equation ltx_eqn_div">
+<span><math id="E4.m1" class="ltx_Math" alttext="g_{p}(n)=P_{p}(A_{n})." display="block"><semantics><mrow><mrow><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">g_{p}(n)=P_{p}(A_{n}).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.4)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Note que <math id="p10.m1" class="ltx_Math" alttext="g_{p}(n)\downarrow\theta(p)" display="inline"><semantics><mrow><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">↓</mo><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">g_{p}(n)\downarrow\theta(p)</annotation></semantics></math> quando <math id="p10.m2" class="ltx_Math" alttext="n\uparrow\infty" display="inline"><semantics><mrow><mi>n</mi><mo stretchy="false">↑</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\uparrow\infty</annotation></semantics></math>. Logo, se <math id="p10.m3" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math>, existe <math id="p10.m4" class="ltx_Math" alttext="p^{\prime}" display="inline"><semantics><msup><mi>p</mi><mo>′</mo></msup><annotation encoding="application/x-tex">p^{\prime}</annotation></semantics></math> satisfazendo
+<math id="p10.m5" class="ltx_Math" alttext="p&lt;p^{\prime}&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msup><mi>p</mi><mo>′</mo></msup><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p^{\prime}&lt;p_{c}</annotation></semantics></math> e portanto</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\lim_{n\to\infty}g_{p^{\prime}}(n)=\theta(p^{\prime})=0." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>g</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}g_{p^{\prime}}(n)=\theta(p^{\prime})=0.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">O problema é mostrar que para algum <math id="p10.m6" class="ltx_Math" alttext="p^{\prime}" display="inline"><semantics><msup><mi>p</mi><mo>′</mo></msup><annotation encoding="application/x-tex">p^{\prime}</annotation></semantics></math>, se
+<math id="p10.m7" class="ltx_Math" alttext="\lim_{n\to\infty}g_{p^{\prime}}(n)=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mrow><msub><mi>g</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}g_{p^{\prime}}(n)=0</annotation></semantics></math> então para <math id="p10.m8" class="ltx_Math" alttext="p&lt;p^{\prime}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msup><mi>p</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">p&lt;p^{\prime}</annotation></semantics></math></p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="g_{p}(n)\leq e^{-\psi_{p}n}." display="block"><semantics><mrow><mrow><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msub><mi>ψ</mi><mi>p</mi></msub><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">g_{p}(n)\leq e^{-\psi_{p}n}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Queremos limitar <math id="p10.m9" class="ltx_Math" alttext="g_{p}(n)" display="inline"><semantics><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">g_{p}(n)</annotation></semantics></math> superiormente em termos de <math id="p10.m10" class="ltx_Math" alttext="g_{p^{\prime}}(n)" display="inline"><semantics><mrow><msub><mi>g</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">g_{p^{\prime}}(n)</annotation></semantics></math> e mais alguma coisa
+(é preciso melhorar a cota trivial <math id="p10.m11" class="ltx_Math" alttext="g_{p}(n)\leq g_{p^{\prime}}(n)" display="inline"><semantics><mrow><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>g</mi><msup><mi>p</mi><mo>′</mo></msup></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">g_{p}(n)\leq g_{p^{\prime}}(n)</annotation></semantics></math>).</p>
+</div>
+<div id="p11" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Parte 1</span></p>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Como já vimos no Capítulo 2, Seção 3, a fórmula de Russo produz a
+seguinte desigualdade para <math id="p12.m1" class="ltx_Math" alttext="0&lt;\alpha\leq\beta\leq 1" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>α</mi><mo>≤</mo><mi>β</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\alpha\leq\beta\leq 1</annotation></semantics></math>.</p>
+<div id="E5" class="ltx_equation ltx_eqn_div">
+<span><math id="E5.m1" class="ltx_Math" alttext="g_{\alpha}(n)\leq g_{\beta}(n)\exp\left(-\int_{\alpha}^{\beta}E_{p}(N(A_{n})|A%
+_{n})dp\right)," display="block"><semantics><mrow><mrow><mrow><msub><mi>g</mi><mi>α</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>g</mi><mi>β</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><msubsup><mo>∫</mo><mi>α</mi><mi>β</mi></msubsup><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>p</mi></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">g_{\alpha}(n)\leq g_{\beta}(n)\exp\left(-\int_{\alpha}^{\beta}E_{p}(N(A_{n})|A%
+_{n})dp\right),</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.5)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">onde <math id="p12.m2" class="ltx_Math" alttext="N(A_{n})" display="inline"><semantics><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(A_{n})</annotation></semantics></math> é o número de elos pivotais para o evento <math id="p12.m3" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math>.</p>
+</div>
+<div id="p13" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Parte 2</span></p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Para um dado <math id="p14.m1" class="ltx_Math" alttext="\beta" display="inline"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>, seja <math id="p14.m2" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> o raio (aleatório) do aglomerado aberto da
+origem (isto é, <math id="p14.m3" class="ltx_Math" alttext="\max_{x\in C}||x||_{1}" display="inline"><semantics><mrow><msub><mi>max</mi><mrow><mi>x</mi><mo>∈</mo><mi>C</mi></mrow></msub><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\max_{x\in C}||x||_{1}</annotation></semantics></math> ou, equivalentemente,
+<math id="p14.m4" class="ltx_math_unparsed" alttext="\max\{k:A_{k}" display="inline"><semantics><mrow><mi>max</mi><mrow><mo stretchy="false">{</mo><mi>k</mi><mo lspace="0.278em" rspace="0.278em">:</mo><msub><mi>A</mi><mi>k</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\max\{k:A_{k}</annotation></semantics></math> ocorre}). Note que se <math id="p14.m5" class="ltx_Math" alttext="\theta(p)&gt;0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p)&gt;0</annotation></semantics></math>, então <math id="p14.m6" class="ltx_Math" alttext="M=\infty" display="inline"><semantics><mrow><mi>M</mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">M=\infty</annotation></semantics></math> com
+probabilidade positiva e se <math id="p14.m7" class="ltx_Math" alttext="\theta(p)=0" display="inline"><semantics><mrow><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta(p)=0</annotation></semantics></math> então <math id="p14.m8" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> é uma variável aleatória
+finita com valores inteiros.</p>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Sejam <math id="p15.m1" class="ltx_Math" alttext="M_{1},M_{2},\ldots" display="inline"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>,</mo><msub><mi>M</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">M_{1},M_{2},\ldots</annotation></semantics></math> variáveis aleatórias independentes
+com a mesma distribuição de <math id="p15.m2" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>. Mostraremos mais adiante
+que</p>
+<div id="E6" class="ltx_equation ltx_eqn_div">
+<span><math id="E6.m1" class="ltx_Math" alttext="P_{p}(N(A_{n})\geq k|A_{n})\geq P((1+M_{1})+\ldots+(1+M_{k})\leq n)," display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>M</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>M</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P_{p}(N(A_{n})\geq k|A_{n})\geq P((1+M_{1})+\ldots+(1+M_{k})\leq n),</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.6)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para todo <math id="p15.m3" class="ltx_Math" alttext="k\geq 0" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k\geq 0</annotation></semantics></math>, o que relaciona <math id="p15.m4" class="ltx_Math" alttext="N(A_{n})" display="inline"><semantics><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(A_{n})</annotation></semantics></math> (condicionado a
+<math id="p15.m5" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math>) a um processo de
+renovação. Usando métodos usuais em tais processos, conclui-se que</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx9" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="E7">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex6.m1" class="ltx_Math" alttext="\displaystyle E_{p}(N(A_{n})|A_{n})" display="inline"><semantics><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle E_{p}(N(A_{n})|A_{n})</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex6.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex6.m3" class="ltx_Math" alttext="\displaystyle\sum_{k=1}^{\infty}P_{p}(N(A_{n})\geq k|A_{n})" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{k=1}^{\infty}P_{p}(N(A_{n})\geq k|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="3" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.7)</span></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex7.m1" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex7.m2" class="ltx_Math" alttext="\displaystyle\sum_{k=1}^{\infty}P((1+M_{1})+\ldots+(1+M_{k})\leq n)" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>M</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>M</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{k=1}^{\infty}P((1+M_{1})+\ldots+(1+M_{k})\leq n)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="E7.m2" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E7.m3" class="ltx_Math" alttext="\displaystyle\frac{n}{E(1+M\wedge n)}-1=\frac{n}{\sum_{i=0}^{n}g_{p}(i)}-1." display="inline"><semantics><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>n</mi><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi>M</mi></mrow><mo>∧</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mi>n</mi><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mstyle><mo>−</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\frac{n}{E(1+M\wedge n)}-1=\frac{n}{\sum_{i=0}^{n}g_{p}(i)}-1.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="p16" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Parte 3</span></p>
+</div>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">Combinam-se as partes 1 e 2 para obter para <math id="p17.m1" class="ltx_Math" alttext="0&lt;\alpha\leq\beta\leq 1" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>α</mi><mo>≤</mo><mi>β</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\alpha\leq\beta\leq 1</annotation></semantics></math>:</p>
+</div>
+<div id="p18" class="ltx_para">
+<div id="E8" class="ltx_equation ltx_eqn_div">
+<span><math id="E8.m1" class="ltx_Math" alttext="g_{\alpha}(n)\leq g_{\beta}(n)\exp\left[(\beta-\alpha)-(\beta-\alpha)\frac{n}{%
+\sum_{i=0}^{n}g_{\beta}(i)}\right]." display="block"><semantics><mrow><mrow><mrow><msub><mi>g</mi><mi>α</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>g</mi><mi>β</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mi>n</mi><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><msub><mi>g</mi><mi>β</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></mrow><mo>]</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">g_{\alpha}(n)\leq g_{\beta}(n)\exp\left[(\beta-\alpha)-(\beta-\alpha)\frac{n}{%
+\sum_{i=0}^{n}g_{\beta}(i)}\right].</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.8)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p19" class="ltx_para">
+<p class="ltx_p">Da desigualdade acima, concluiremos que</p>
+<div id="E9" class="ltx_equation ltx_eqn_div">
+<span><math id="E9.m1" class="ltx_Math" alttext="\sum_{i=0}^{\infty}g_{\beta}(i)&lt;\infty," display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>g</mi><mi>β</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\sum_{i=0}^{\infty}g_{\beta}(i)&lt;\infty,</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.9)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">do que segue o teorema.</p>
+</div>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">Em seguida apresentaremos as partes 2 e 3 em detalhes.</p>
+</div>
+<div id="p21" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Parte 2</span></p>
+</div>
+<div id="p22" class="ltx_para">
+<p class="ltx_p">Sejam <math id="p22.m1" class="ltx_Math" alttext="\{e_{1},e_{2},\ldots,e_{m}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><msub><mi>e</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>e</mi><mi>m</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{e_{1},e_{2},\ldots,e_{m}\}</annotation></semantics></math> os elos pivotais abertos para <math id="p22.m2" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math> na ordem
+com que são atingidos por um caminho aberto da origem
+até <math id="p22.m3" class="ltx_Math" alttext="\partial S_{n}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\partial S_{n}</annotation></semantics></math>. (Note que a ordem é a mesma para qualquer tal caminho devido
+à pivotalidade.) Escreva <math id="p22.m4" class="ltx_Math" alttext="e_{j}" display="inline"><semantics><msub><mi>e</mi><mi>j</mi></msub><annotation encoding="application/x-tex">e_{j}</annotation></semantics></math> como <math id="p22.m5" class="ltx_Math" alttext="(x_{j},y_{j})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><msub><mi>y</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x_{j},y_{j})</annotation></semantics></math> (Na ”ordem correta”.
+Veja a Figura <a href="#F1" title="Figura 3.1 ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>.).</p>
+</div>
+<figure id="F1" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x5.png" id="F1.g1" class="ltx_graphics ltx_img_landscape" width="486" height="380" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 3.1: </span>Figura do aglomerado da origem em <math id="F1.m7" class="ltx_Math" alttext="S_{7}" display="inline"><semantics><msub><mi>S</mi><mn>7</mn></msub><annotation encoding="application/x-tex">S_{7}</annotation></semantics></math>. Há exatamente 4 elos
+pivotais para <math id="F1.m8" class="ltx_Math" alttext="A_{7}" display="inline"><semantics><msub><mi>A</mi><mn>7</mn></msub><annotation encoding="application/x-tex">A_{7}</annotation></semantics></math> nesta configuração, denotados <math id="F1.m9" class="ltx_Math" alttext="e_{1}" display="inline"><semantics><msub><mi>e</mi><mn>1</mn></msub><annotation encoding="application/x-tex">e_{1}</annotation></semantics></math>, <math id="F1.m10" class="ltx_Math" alttext="e_{2}" display="inline"><semantics><msub><mi>e</mi><mn>2</mn></msub><annotation encoding="application/x-tex">e_{2}</annotation></semantics></math>, <math id="F1.m11" class="ltx_Math" alttext="e_{3}" display="inline"><semantics><msub><mi>e</mi><mn>3</mn></msub><annotation encoding="application/x-tex">e_{3}</annotation></semantics></math> e <math id="F1.m12" class="ltx_Math" alttext="e_{4}" display="inline"><semantics><msub><mi>e</mi><mn>4</mn></msub><annotation encoding="application/x-tex">e_{4}</annotation></semantics></math>.</figcaption>
+</figure>
+<div id="p23" class="ltx_para">
+<p class="ltx_p">Os elos do aglomerado da origem entre os elos pivotais sucessivos formam
+<span class="ltx_text ltx_font_italic">salsichas</span>. O aglomerado da origem em <math id="p23.m1" class="ltx_Math" alttext="S_{n}" display="inline"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math> pode ser visto então como
+como salsichas de elos conectadas por elos pivotais.</p>
+</div>
+<div id="p24" class="ltx_para">
+<p class="ltx_p">Sejam</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx10" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex8.m1" class="ltx_Math" alttext="\displaystyle\rho_{1}" display="inline"><semantics><msub><mi>ρ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle\rho_{1}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex8.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex8.m3" class="ltx_Math" alttext="\displaystyle||x_{1}||_{1}" display="inline"><semantics><msub><mrow><mo stretchy="false">‖</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">‖</mo></mrow><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle||x_{1}||_{1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex10">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex9.m1" class="ltx_Math" alttext="\displaystyle\rho_{2}" display="inline"><semantics><msub><mi>ρ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\displaystyle\rho_{2}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex9.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex9.m3" class="ltx_Math" alttext="\displaystyle||y_{1}-x_{2}||_{1}" display="inline"><semantics><msub><mrow><mo stretchy="false">‖</mo><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo stretchy="false">‖</mo></mrow><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle||y_{1}-x_{2}||_{1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex10.m1" class="ltx_Math" alttext="\displaystyle\vdots" display="inline"><semantics><mi mathvariant="normal">⋮</mi><annotation encoding="application/x-tex">\displaystyle\vdots</annotation></semantics></math></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+<tbody id="Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex11.m1" class="ltx_Math" alttext="\displaystyle\rho_{m}" display="inline"><semantics><msub><mi>ρ</mi><mi>m</mi></msub><annotation encoding="application/x-tex">\displaystyle\rho_{m}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex11.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex11.m3" class="ltx_Math" alttext="\displaystyle||y_{m-1}-x_{m}||_{1}," display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><msub><mi>y</mi><mrow><mi>m</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo stretchy="false">‖</mo></mrow><mn>1</mn></msub><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle||y_{m-1}-x_{m}||_{1},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">e <math id="p24.m1" class="ltx_Math" alttext="\rho_{i}=\infty" display="inline"><semantics><mrow><msub><mi>ρ</mi><mi>i</mi></msub><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\rho_{i}=\infty</annotation></semantics></math> para <math id="p24.m2" class="ltx_Math" alttext="i&gt;m" display="inline"><semantics><mrow><mi>i</mi><mo>&gt;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">i&gt;m</annotation></semantics></math>.
+<math id="p24.m3" class="ltx_Math" alttext="\rho_{1},\ldots,\rho_{m}" display="inline"><semantics><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\rho_{1},\ldots,\rho_{m}</annotation></semantics></math> representam os <span class="ltx_text ltx_font_italic">raios</span> das salsichas sucessivas.</p>
+</div>
+<div id="p25" class="ltx_para">
+<p class="ltx_p">Então <math id="p25.m1" class="ltx_Math" alttext="N(A_{n})\geq k" display="inline"><semantics><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">N(A_{n})\geq k</annotation></semantics></math> se</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="(\rho_{1}+1)+(\rho_{2}+1)+\ldots+(\rho_{k}+1)\leq n," display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mn>2</mn></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>n</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">(\rho_{1}+1)+(\rho_{2}+1)+\ldots+(\rho_{k}+1)\leq n,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">ou seja,</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\rho_{1}+\ldots+\rho_{k}\leq n-k." display="block"><semantics><mrow><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>ρ</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\rho_{1}+\ldots+\rho_{k}\leq n-k.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Logo,</p>
+<div id="E10" class="ltx_equation ltx_eqn_div">
+<span><math id="E10.m1" class="ltx_Math" alttext="P_{p}(N(A_{n})\geq k|A_{n})\geq P_{p}(\rho_{1}+\ldots+\rho_{k}\leq n-k|A_{n})." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>ρ</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(N(A_{n})\geq k|A_{n})\geq P_{p}(\rho_{1}+\ldots+\rho_{k}\leq n-k|A_{n}).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.10)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p26" class="ltx_para">
+<p class="ltx_p">Queremos mostrar que</p>
+<div id="E11" class="ltx_equation ltx_eqn_div">
+<span><math id="E11.m1" class="ltx_Math" alttext="P_{p}(\rho_{1}+\ldots+\rho_{k}\leq n-k|A_{n})\geq P_{p}(M_{1}+\ldots+M_{k}\leq
+n%
+-k)," display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>ρ</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>M</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P_{p}(\rho_{1}+\ldots+\rho_{k}\leq n-k|A_{n})\geq P_{p}(M_{1}+\ldots+M_{k}\leq
+n%
+-k),</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.11)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para todo <math id="p26.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> e <math id="p26.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,
+onde <math id="p26.m3" class="ltx_Math" alttext="M_{1},M_{2},\ldots" display="inline"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>,</mo><msub><mi>M</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">M_{1},M_{2},\ldots</annotation></semantics></math> são variáveis aleatórias independentes com distribuição
+comum igual àquela do raio do aglomerado da origem (vamos denotar esta última
+v.a. por <math id="p26.m4" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>).</p>
+</div>
+<div id="p27" class="ltx_para">
+<p class="ltx_p">Para obter a última desigualdade, seria bom se bastasse provar
+desigualdades envolvendo probabilidades condicionais do tipo</p>
+<div id="E12" class="ltx_equation ltx_eqn_div">
+<span><math id="E12.m1" class="ltx_math_unparsed" alttext="P_{p}(\rho_{k}\leq r_{k}|\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1},A_{n})\geq P%
+(M_{k}\leq r_{k})," display="block"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>ρ</mi><mi>k</mi></msub><mo>≤</mo><msub><mi>r</mi><mi>k</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>≥</mo><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mi>M</mi><mi>k</mi></msub><mo>≤</mo><msub><mi>r</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P_{p}(\rho_{k}\leq r_{k}|\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1},A_{n})\geq P%
+(M_{k}\leq r_{k}),</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.12)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para todo <math id="p27.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, <math id="p27.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> e <math id="p27.m3" class="ltx_Math" alttext="r_{1}+\ldots+r_{k}\leq n-k" display="inline"><semantics><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>r</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mrow><annotation encoding="application/x-tex">r_{1}+\ldots+r_{k}\leq n-k</annotation></semantics></math>.</p>
+</div>
+<div id="p28" class="ltx_para">
+<p class="ltx_p">O próximo lema mostra que este é o caso.</p>
+</div>
+<div id="ThmLem1" class="ltx_theorem ltx_theorem_Lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Lema 3.1</span></span></h6>
+<div id="ThmLem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A desigualdade (<a href="#E12" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.12</span></a>) implica a desigualdade (<a href="#E11" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.11</span></a>)</span></p>
+</div>
+</div>
+<div id="p29" class="ltx_para">
+<p class="ltx_p">Portanto é suficiente provar o seguinte.</p>
+</div>
+<div id="ThmLem2" class="ltx_theorem ltx_theorem_Lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Lema 3.2</span></span></h6>
+<div id="ThmLem2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A desigualdade (<a href="#E12" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.12</span></a>) é válida.</span></p>
+</div>
+</div>
+<div id="p30" class="ltx_para">
+<p class="ltx_p">Antes de provarmos os lemas acima, vejamos porque (<a href="#E11" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.11</span></a>) implica
+no resultado da parte 2.</p>
+</div>
+<div id="p31" class="ltx_para">
+<p class="ltx_p">De (<a href="#E10" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.10</span></a>) e (<a href="#E11" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.11</span></a>), temos</p>
+<div id="E13" class="ltx_equation ltx_eqn_div">
+<span><math id="E13.m1" class="ltx_Math" alttext="P_{p}(N(A_{n})\geq k|A_{n})\geq P((1+M_{1})+\ldots+(1+M_{k})\leq n)." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>M</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>M</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(N(A_{n})\geq k|A_{n})\geq P((1+M_{1})+\ldots+(1+M_{k})\leq n).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.13)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p32" class="ltx_para">
+<p class="ltx_p">Consideremos <math id="p32.m1" class="ltx_Math" alttext="M_{1}^{\prime},M_{2}^{\prime},\ldots" display="inline"><semantics><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>,</mo><msubsup><mi>M</mi><mn>2</mn><mo>′</mo></msubsup><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">M_{1}^{\prime},M_{2}^{\prime},\ldots</annotation></semantics></math> v.a.’s independentes com a mesma distribuição de
+<math id="p32.m2" class="ltx_Math" alttext="M^{\prime}=1+M\wedge n" display="inline"><semantics><mrow><msup><mi>M</mi><mo>′</mo></msup><mo>=</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi>M</mi></mrow><mo>∧</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">M^{\prime}=1+M\wedge n</annotation></semantics></math>. Temos</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="P_{p}(N(A_{n})\geq k|A_{n})\geq P(M_{1}^{\prime}+\ldots+M_{k}^{\prime}\leq n)." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msubsup><mi>M</mi><mi>k</mi><mo>′</mo></msubsup></mrow><mo>≤</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(N(A_{n})\geq k|A_{n})\geq P(M_{1}^{\prime}+\ldots+M_{k}^{\prime}\leq n).</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p33" class="ltx_para">
+<p class="ltx_p">Agora usamos um pouco da teoria da renovação elementar. Considere um processo de
+renovação com ”tempos de vida”<math id="p33.m1" class="ltx_Math" alttext="M_{1}^{\prime},M_{2}^{\prime},\ldots" display="inline"><semantics><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>,</mo><msubsup><mi>M</mi><mn>2</mn><mo>′</mo></msubsup><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">M_{1}^{\prime},M_{2}^{\prime},\ldots</annotation></semantics></math> (e portanto instantes de renovação
+<math id="p33.m2" class="ltx_Math" alttext="M_{1}^{\prime}" display="inline"><semantics><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><annotation encoding="application/x-tex">M_{1}^{\prime}</annotation></semantics></math>, <math id="p33.m3" class="ltx_Math" alttext="M_{1}^{\prime}+M_{2}^{\prime},\ldots,M_{1}^{\prime}+\ldots+M_{k}^{\prime},\ldots" display="inline"><semantics><mrow><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><msubsup><mi>M</mi><mn>2</mn><mo>′</mo></msubsup></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msubsup><mi>M</mi><mi>k</mi><mo>′</mo></msubsup></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">M_{1}^{\prime}+M_{2}^{\prime},\ldots,M_{1}^{\prime}+\ldots+M_{k}^{\prime},\ldots</annotation></semantics></math>)</p>
+</div>
+<div id="p34" class="ltx_para">
+<p class="ltx_p">Defina a v.a. <math id="p34.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> como 1 mais o número de renovações até o instante <math id="p34.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, isto é,</p>
+<div id="Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex15.m1" class="ltx_Math" alttext="K=\min\{k:M_{1}^{\prime}+\ldots+M_{k}^{\prime}&gt;n\}." display="block"><semantics><mrow><mrow><mi>K</mi><mo>=</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mi>k</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msubsup><mi>M</mi><mi>k</mi><mo>′</mo></msubsup></mrow><mo>&gt;</mo><mi>n</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">K=\min\{k:M_{1}^{\prime}+\ldots+M_{k}^{\prime}&gt;n\}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Temos então</p>
+<div id="Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex16.m1" class="ltx_Math" alttext="P(M_{1}^{\prime}+\ldots+M_{k}^{\prime}\leq n)=P(K\geq k+1)=P(K-1\geq k)." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msubsup><mi>M</mi><mi>k</mi><mo>′</mo></msubsup></mrow><mo>≤</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>K</mi><mo>≥</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>K</mi><mo>−</mo><mn>1</mn></mrow><mo>≥</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P(M_{1}^{\prime}+\ldots+M_{k}^{\prime}\leq n)=P(K\geq k+1)=P(K-1\geq k).</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p35" class="ltx_para">
+<p class="ltx_p">Somando sobre <math id="p35.m1" class="ltx_Math" alttext="k\geq 1" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\geq 1</annotation></semantics></math>:</p>
+<div id="Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex17.m1" class="ltx_Math" alttext="E_{p}(N(A_{n})|A_{n})\geq E(K-1)=E(K)-1." display="block"><semantics><mrow><mrow><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>K</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mn>1</mn></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E_{p}(N(A_{n})|A_{n})\geq E(K-1)=E(K)-1.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p36" class="ltx_para">
+<p class="ltx_p">Para obter uma cota inferior para <math id="p36.m1" class="ltx_Math" alttext="E(K)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(K)</annotation></semantics></math> usamos a
+<span class="ltx_text ltx_font_italic">Identidade de Wald</span> <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib9" title="" class="ltx_ref">9</a>]</cite>, que diz que</p>
+<div id="Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex18.m1" class="ltx_Math" alttext="E(M_{1}^{\prime}+\ldots+M_{K}^{\prime})=E(K)E(M^{\prime})." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msubsup><mi>M</mi><mi>K</mi><mo>′</mo></msubsup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>M</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E(M_{1}^{\prime}+\ldots+M_{K}^{\prime})=E(K)E(M^{\prime}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como, claramente, <math id="p36.m2" class="ltx_Math" alttext="M_{1}^{\prime}+\ldots+M_{K}^{\prime}\geq n+1&gt;n," display="inline"><semantics><mrow><mrow><mrow><msubsup><mi>M</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msubsup><mi>M</mi><mi>K</mi><mo>′</mo></msubsup></mrow><mo>≥</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>&gt;</mo><mi>n</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">M_{1}^{\prime}+\ldots+M_{K}^{\prime}\geq n+1&gt;n,</annotation></semantics></math> temos imediatamente que</p>
+<div id="Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex19.m1" class="ltx_Math" alttext="E(K)-1&gt;\frac{n}{E(M^{\prime})}-1," display="block"><semantics><mrow><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mn>1</mn></mrow><mo>&gt;</mo><mrow><mfrac><mi>n</mi><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>M</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>−</mo><mn>1</mn></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">E(K)-1&gt;\frac{n}{E(M^{\prime})}-1,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">como queríamos.</p>
+</div>
+<div id="p37" class="ltx_para">
+<p class="ltx_p">Vamos agora às demonstrações dos lemas.</p>
+</div>
+<div id="p38" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova do Lema <a href="#ThmLem1" title="Lema 3.1 ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a></span></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx11" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex31">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex20.m1" class="ltx_Math" alttext="\displaystyle P_{p}(\rho_{1}+\ldots+\rho_{k}\leq n-k|A_{n})" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>ρ</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(\rho_{1}+\ldots+\rho_{k}\leq n-k|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex21.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex21.m2" class="ltx_math_unparsed" alttext="\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,r_{k-1}}\!\!\!\!\!\!P_{p}(\rho_{k}%
+\leq n-k-\sum_{i=1}^{k-1}r_{i}|\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1},A_{n})" display="inline"><semantics><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></munder></mstyle><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>ρ</mi><mi>k</mi></msub><mo>≤</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo>−</mo><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></munderover></mstyle><msub><mi>r</mi><mi>i</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,r_{k-1}}\!\!\!\!\!\!P_{p}(\rho_{k}%
+\leq n-k-\sum_{i=1}^{k-1}r_{i}|\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1},A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex22.m1" class="ltx_math_unparsed" alttext="\displaystyle\mbox{}\hskip 42.67912pt\times P_{p}(\rho_{1}=r_{1},\ldots,\rho_{%
+k-1}=r_{k-1}|A_{n})" display="inline"><semantics><mrow><mrow></mrow><mspace width="4.492em"></mspace><mo rspace="0.222em">×</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{}\hskip 42.67912pt\times P_{p}(\rho_{1}=r_{1},\ldots,\rho_{%
+k-1}=r_{k-1}|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex23.m1" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex23.m2" class="ltx_Math" alttext="\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,k-1}\!\!\!\!\!\!P_{p}(M_{k}\leq n-%
+k-\sum_{i=1}^{k-1}r_{i})P_{p}(\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1}|A_{n})" display="inline"><semantics><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mrow></munder></mstyle><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>M</mi><mi>k</mi></msub><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi><mo>−</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></munderover></mstyle><msub><mi>r</mi><mi>i</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,k-1}\!\!\!\!\!\!P_{p}(M_{k}\leq n-%
+k-\sum_{i=1}^{k-1}r_{i})P_{p}(\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1}|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex24.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex24.m2" class="ltx_Math" alttext="\displaystyle P_{p}(\rho_{1}+\ldots+\rho_{k-1}+M_{k}\leq n-k|A_{n})" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>M</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(\rho_{1}+\ldots+\rho_{k-1}+M_{k}\leq n-k|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex25.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex25.m2" class="ltx_math_unparsed" alttext="\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,r_{k-2},r_{k}}\!\!\!\!\!\!P_{p}(%
+\rho_{k-1}\leq n-k-\!\!\!\!\!\!\sum_{i=1,i\neq k-1}^{k}\!\!\!\!\!\!r_{i}|\rho_%
+{1}=r_{1},\ldots,\rho_{k-2}=r_{k-2}," display="inline"><semantics><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>r</mi><mi>k</mi></msub></mrow></munder></mstyle><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>≤</mo><mi>n</mi><mo>−</mo><mi>k</mi><mpadded width="0em"><mo>−</mo></mpadded><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>i</mi><mo>≠</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow><mi>k</mi></munderover></mstyle><msub><mi>r</mi><mi>i</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,r_{k-2},r_{k}}\!\!\!\!\!\!P_{p}(%
+\rho_{k-1}\leq n-k-\!\!\!\!\!\!\sum_{i=1,i\neq k-1}^{k}\!\!\!\!\!\!r_{i}|\rho_%
+{1}=r_{1},\ldots,\rho_{k-2}=r_{k-2},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex26.m1" class="ltx_math_unparsed" alttext="\displaystyle\mbox{}\hskip 56.9055ptM_{k}=r_{k},A_{n})P_{p}(\rho_{1}=r_{1},%
+\ldots,\rho_{k-2}=r_{k-2},M_{k}=r_{k}|A_{n})" display="inline"><semantics><mrow><mrow></mrow><mspace width="5.69em"></mspace><msub><mi>M</mi><mi>k</mi></msub><mo>=</mo><msub><mi>r</mi><mi>k</mi></msub><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mi>P</mi><msub><mi></mi><mi>p</mi></msub><mo stretchy="false">(</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>M</mi><mi>k</mi></msub><mo>=</mo><msub><mi>r</mi><mi>k</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{}\hskip 56.9055ptM_{k}=r_{k},A_{n})P_{p}(\rho_{1}=r_{1},%
+\ldots,\rho_{k-2}=r_{k-2},M_{k}=r_{k}|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex27.m1" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex27.m2" class="ltx_Math" alttext="\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,r_{k-2},r_{k}}\!\!\!\!\!\!P_{p}(M_%
+{k-1}\leq n-k-\!\!\!\!\!\!\sum_{i=1,i\neq k-1}^{k}\!\!\!\!\!\!r_{i})" display="inline"><semantics><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>r</mi><mi>k</mi></msub></mrow></munder></mstyle><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>M</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi><mo>−</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>i</mi><mo>≠</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow><mi>k</mi></munderover></mstyle><msub><mi>r</mi><mi>i</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\!\!\!\!\!\!\sum_{r_{1},\ldots,r_{k-2},r_{k}}\!\!\!\!\!\!P_{p}(M_%
+{k-1}\leq n-k-\!\!\!\!\!\!\sum_{i=1,i\neq k-1}^{k}\!\!\!\!\!\!r_{i})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex28.m1" class="ltx_math_unparsed" alttext="\displaystyle\mbox{}\hskip 42.67912pt\times P_{p}(\rho_{1}=r_{1},\ldots,\rho_{%
+k-2}=r_{k-2},M_{k}=r_{k}|A_{n})" display="inline"><semantics><mrow><mrow></mrow><mspace width="4.492em"></mspace><mo rspace="0.222em">×</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>M</mi><mi>k</mi></msub><mo>=</mo><msub><mi>r</mi><mi>k</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{}\hskip 42.67912pt\times P_{p}(\rho_{1}=r_{1},\ldots,\rho_{%
+k-2}=r_{k-2},M_{k}=r_{k}|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex29.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex29.m2" class="ltx_Math" alttext="\displaystyle P_{p}(\rho_{1}+\ldots+\rho_{k-2}+M_{k-1}+M_{k}\leq n-k|A_{n})" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>M</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>M</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mrow><mi>k</mi><mo fence="false">|</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(\rho_{1}+\ldots+\rho_{k-2}+M_{k-1}+M_{k}\leq n-k|A_{n})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex30.m1" class="ltx_Math" alttext="\displaystyle\vdots" display="inline"><semantics><mi mathvariant="normal">⋮</mi><annotation encoding="application/x-tex">\displaystyle\vdots</annotation></semantics></math></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex31.m1" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex31.m2" class="ltx_Math" alttext="\displaystyle P_{p}(M_{1}+\ldots+M_{k}\leq n-k)," display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>M</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(M_{1}+\ldots+M_{k}\leq n-k),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">as desigualdades acima todas seguindo de (<a href="#E12" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.12</span></a>).</p>
+</div>
+<div id="p39" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova do Lema <a href="#ThmLem2" title="Lema 3.2 ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a></span></p>
+</div>
+<div id="p40" class="ltx_para">
+<p class="ltx_p">Queremos provar que</p>
+<div id="E14" class="ltx_equation ltx_eqn_div">
+<span><math id="E14.m1" class="ltx_math_unparsed" alttext="P_{p}(\rho_{k}\leq r_{k}|\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1},A_{n})\geq P%
+_{p}(M\leq r_{k})" display="block"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>ρ</mi><mi>k</mi></msub><mo>≤</mo><msub><mi>r</mi><mi>k</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>≥</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>≤</mo><msub><mi>r</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{p}(\rho_{k}\leq r_{k}|\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1},A_{n})\geq P%
+_{p}(M\leq r_{k})</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.14)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">quando <math id="p40.m1" class="ltx_Math" alttext="r_{1}+\ldots+r_{k}\leq n-k." display="inline"><semantics><mrow><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>r</mi><mi>k</mi></msub></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">r_{1}+\ldots+r_{k}\leq n-k.</annotation></semantics></math> Isto é equivalente a (denotando o evento
+<math id="p40.m2" class="ltx_Math" alttext="\{\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msub><mi>ρ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\rho_{1}=r_{1},\ldots,\rho_{k-1}=r_{k-1}\}</annotation></semantics></math> por <math id="p40.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>)</p>
+<div id="E15" class="ltx_equation ltx_eqn_div">
+<span><math id="E15.m1" class="ltx_Math" alttext="P_{p}(\rho_{k}&gt;r_{k},B,A_{n})\leq P_{p}(M&gt;r_{k})P_{p}(B,A_{n})." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mi>k</mi></msub><mo>&gt;</mo><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>,</mo><mi>B</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>M</mi><mo>&gt;</mo><msub><mi>r</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(\rho_{k}&gt;r_{k},B,A_{n})\leq P_{p}(M&gt;r_{k})P_{p}(B,A_{n}).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.15)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">Note que <math id="p40.m4" class="ltx_Math" alttext="\{M&gt;r_{k}\}=A_{r_{k}+1}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mi>M</mi><mo>&gt;</mo><msub><mi>r</mi><mi>k</mi></msub></mrow><mo stretchy="false">}</mo></mrow><mo>=</mo><msub><mi>A</mi><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\{M&gt;r_{k}\}=A_{r_{k}+1}</annotation></semantics></math>.
+Para <math id="p40.m5" class="ltx_Math" alttext="k=1" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k=1</annotation></semantics></math> a desigualdade se torna</p>
+<div id="E16" class="ltx_equation ltx_eqn_div">
+<span><math id="E16.m1" class="ltx_Math" alttext="P_{p}(\rho_{1}&gt;r_{1},A_{n})\leq P_{p}(A_{r_{1}+1})P_{p}(A_{n})" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>&gt;</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">P_{p}(\rho_{1}&gt;r_{1},A_{n})\leq P_{p}(A_{r_{1}+1})P_{p}(A_{n})</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.16)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para <math id="p40.m6" class="ltx_Math" alttext="r_{1}\leq n-1" display="inline"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">r_{1}\leq n-1</annotation></semantics></math>.</p>
+</div>
+<div id="p41" class="ltx_para">
+<p class="ltx_p">No evento em que <math id="p41.m1" class="ltx_Math" alttext="\{\rho_{1}&gt;r_{1}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>&gt;</mo><msub><mi>r</mi><mn>1</mn></msub></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\rho_{1}&gt;r_{1}\}</annotation></semantics></math>, a origem está conectada por dois caminhos
+disjuntos a <math id="p41.m2" class="ltx_Math" alttext="x_{1}" display="inline"><semantics><msub><mi>x</mi><mn>1</mn></msub><annotation encoding="application/x-tex">x_{1}</annotation></semantics></math> e <math id="p41.m3" class="ltx_Math" alttext="x_{1}" display="inline"><semantics><msub><mi>x</mi><mn>1</mn></msub><annotation encoding="application/x-tex">x_{1}</annotation></semantics></math> está a distância pelo menos <math id="p41.m4" class="ltx_Math" alttext="r_{1}+1" display="inline"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r_{1}+1</annotation></semantics></math> da origem
+(veja a Figura <a href="#F2" title="Figura 3.2 ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>).</p>
+</div>
+<figure id="F2" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x6.png" id="F2.g1" class="ltx_graphics ltx_img_landscape" width="486" height="380" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 3.2: </span>Os elos pivotais são <math id="F2.m7" class="ltx_Math" alttext="e_{i}=(x_{i},y_{i})" display="inline"><semantics><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">e_{i}=(x_{i},y_{i})</annotation></semantics></math> para <math id="F2.m8" class="ltx_Math" alttext="i=1,2,3,4." display="inline"><semantics><mrow><mrow><mi>i</mi><mo>=</mo><mn>1,2,3,4</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">i=1,2,3,4.</annotation></semantics></math> Note que
+<math id="F2.m9" class="ltx_Math" alttext="x_{3}=y_{2}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>3</mn></msub><mo>=</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">x_{3}=y_{2}</annotation></semantics></math> nesta configuração. A linha tracejada é a superfície
+<math id="F2.m10" class="ltx_Math" alttext="\partial S_{\rho_{1}}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>S</mi><msub><mi>ρ</mi><mn>1</mn></msub></msub></mrow><annotation encoding="application/x-tex">\partial S_{\rho_{1}}</annotation></semantics></math> de <math id="F2.m11" class="ltx_Math" alttext="S_{\rho_{1}}" display="inline"><semantics><msub><mi>S</mi><msub><mi>ρ</mi><mn>1</mn></msub></msub><annotation encoding="application/x-tex">S_{\rho_{1}}</annotation></semantics></math>. Note os caminhos disjuntos da origem a
+<math id="F2.m12" class="ltx_Math" alttext="\partial S_{\rho_{1}}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>S</mi><msub><mi>ρ</mi><mn>1</mn></msub></msub></mrow><annotation encoding="application/x-tex">\partial S_{\rho_{1}}</annotation></semantics></math>.</figcaption>
+</figure>
+<div id="p42" class="ltx_para">
+<p class="ltx_p">No evento <math id="p42.m1" class="ltx_Math" alttext="\{\rho_{1}&gt;r_{1}\}\cap A_{n}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>&gt;</mo><msub><mi>r</mi><mn>1</mn></msub></mrow><mo stretchy="false">}</mo></mrow><mo>∩</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\{\rho_{1}&gt;r_{1}\}\cap A_{n}</annotation></semantics></math>, há dois caminhos disjuntos, um de <math id="p42.m2" class="ltx_Math" alttext="O" display="inline"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math> a
+<math id="p42.m3" class="ltx_Math" alttext="\partial S_{r_{1}+1}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>S</mi><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\partial S_{r_{1}+1}</annotation></semantics></math> e outro de <math id="p42.m4" class="ltx_Math" alttext="O" display="inline"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math> a <math id="p42.m5" class="ltx_Math" alttext="\partial S_{n}" display="inline"><semantics><mrow><mo rspace="0em">∂</mo><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\partial S_{n}</annotation></semantics></math>. Portanto,</p>
+<div id="Ex32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex32.m1" class="ltx_Math" alttext="\{\rho_{1}&gt;r_{1}\}\cap A_{n}\subset A_{r_{1}+1}\circ A_{n}" display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">{</mo><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>&gt;</mo><msub><mi>r</mi><mn>1</mn></msub></mrow><mo stretchy="false">}</mo></mrow><mo>∩</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>⊂</mo><mrow><msub><mi>A</mi><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\{\rho_{1}&gt;r_{1}\}\cap A_{n}\subset A_{r_{1}+1}\circ A_{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e a desigualdade de BK produz a desigualdade (<a href="#E16" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.16</span></a>).</p>
+</div>
+<div id="p43" class="ltx_para">
+<p class="ltx_p">Para <math id="p43.m1" class="ltx_Math" alttext="k&gt;1" display="inline"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k&gt;1</annotation></semantics></math>, escreva</p>
+<div id="Ex33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex33.m1" class="ltx_Math" alttext="B=\bigcup_{\Gamma}B_{\Gamma}," display="block"><semantics><mrow><mrow><mi>B</mi><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">⋃</mo><mi mathvariant="normal">Γ</mi></munder><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">B=\bigcup_{\Gamma}B_{\Gamma},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">união disjunta sobre configurações (detalhadas) das salsichas até <math id="p43.m2" class="ltx_Math" alttext="y_{k-1}" display="inline"><semantics><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">y_{k-1}</annotation></semantics></math>.
+Então</p>
+<div id="E17" class="ltx_equation ltx_eqn_div">
+<span><math id="E17.m1" class="ltx_Math" alttext="P_{p}(B,A_{n})=\sum_{\Gamma}P_{p}(A_{n}|B_{\Gamma})P_{p}(B_{\Gamma})" display="block"><semantics><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mi mathvariant="normal">Γ</mi></munder><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo fence="false">|</mo><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">P_{p}(B,A_{n})=\sum_{\Gamma}P_{p}(A_{n}|B_{\Gamma})P_{p}(B_{\Gamma})</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.17)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">e</p>
+<div id="E18" class="ltx_equation ltx_eqn_div">
+<span><math id="E18.m1" class="ltx_Math" alttext="P_{p}(\rho_{k}&gt;r_{k},B,A_{n})=\sum_{\Gamma}P_{p}(\rho_{k}&gt;r_{k},A_{n}|B_{%
+\Gamma})P_{p}(B_{\Gamma})." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mi>k</mi></msub><mo>&gt;</mo><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>,</mo><mi>B</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mi mathvariant="normal">Γ</mi></munder><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mi>k</mi></msub><mo>&gt;</mo><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>,</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo fence="false">|</mo><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(\rho_{k}&gt;r_{k},B,A_{n})=\sum_{\Gamma}P_{p}(\rho_{k}&gt;r_{k},A_{n}|B_{%
+\Gamma})P_{p}(B_{\Gamma}).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.18)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">Logo é suficiente mostrar para cada <math id="p43.m3" class="ltx_Math" alttext="\Gamma" display="inline"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>:</p>
+<div id="E19" class="ltx_equation ltx_eqn_div">
+<span><math id="E19.m1" class="ltx_Math" alttext="P_{p}(\rho_{k}&gt;r_{k},A_{n}|B_{\Gamma})\leq P_{p}(A_{r_{k}+1})P_{p}(A_{n}|B_{%
+\Gamma})." display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ρ</mi><mi>k</mi></msub><mo>&gt;</mo><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>,</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo fence="false">|</mo><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo fence="false">|</mo><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P_{p}(\rho_{k}&gt;r_{k},A_{n}|B_{\Gamma})\leq P_{p}(A_{r_{k}+1})P_{p}(A_{n}|B_{%
+\Gamma}).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.19)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">Mas a probabilidade à esquerda é menor ou igual a</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx12" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex34"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex34.m1" class="ltx_math_unparsed" alttext="\displaystyle P_{p}(\mbox{há caminhos disjuntos abertos de $y_{k-1}$ a
+$\partial S(y_{k-1},r_{k}+1)$ e de $y_{k-1}$}" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><mrow><mtext>há caminhos disjuntos abertos de </mtext><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mtext> a </mtext><mrow><mo lspace="0em" rspace="0em">∂</mo><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mtext> e de </mtext><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(\mbox{há caminhos disjuntos abertos de $y_{k-1}$ a
+$\partial S(y_{k-1},r_{k}+1)$ e de $y_{k-1}$}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex35"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex35.m1" class="ltx_math_unparsed" alttext="\displaystyle\mbox{}\mbox{a $\partial S_{n}$ que não usam elos dos fechos das %
+salsichas anteriores})," display="inline"><semantics><mrow><mrow><mtext>a </mtext><mrow><mo lspace="0em" rspace="0em">∂</mo><msub><mi>S</mi><mi>n</mi></msub></mrow><mtext> que não usam elos dos fechos das salsichas anteriores</mtext></mrow><mo stretchy="false">)</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{}\mbox{a $\partial S_{n}$ que não usam elos dos fechos das %
+salsichas anteriores}),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">onde <math id="p43.m4" class="ltx_Math" alttext="S(y_{k-1},r_{k}+1)" display="inline"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">S(y_{k-1},r_{k}+1)</annotation></semantics></math> é a esfera de centro em <math id="p43.m5" class="ltx_Math" alttext="y_{k-1}" display="inline"><semantics><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">y_{k-1}</annotation></semantics></math> e raio <math id="p43.m6" class="ltx_Math" alttext="r_{k}+1" display="inline"><semantics><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r_{k}+1</annotation></semantics></math>.</p>
+</div>
+<div id="p44" class="ltx_para">
+<p class="ltx_p">Como no caso <math id="p44.m1" class="ltx_Math" alttext="k=1" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k=1</annotation></semantics></math>, da desigualdade de BK, desta vez aplicada substituindo
+<math id="p44.m2" class="ltx_Math" alttext="\mathbb{E}^{d}" display="inline"><semantics><msup><mi>𝔼</mi><mi>d</mi></msup><annotation encoding="application/x-tex">\mathbb{E}^{d}</annotation></semantics></math> por <math id="p44.m3" class="ltx_math_unparsed" alttext="\mathbb{E}^{d}\backslash" display="inline"><semantics><mrow><msup><mi>𝔼</mi><mi>d</mi></msup><mo lspace="0.222em">\</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}^{d}\backslash</annotation></semantics></math>(elos dos fechos das salsichas anteriores), segue
+que a probabilidade acima é menor ou igual a</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx13" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex36"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex36.m1" class="ltx_math_unparsed" alttext="\displaystyle P_{p}(y_{k-1}\leftrightarrow\partial S(y_{k-1},r_{k}+1)\,\,\mbox%
+{sem usar elos anteriores})" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo rspace="0.1389em" stretchy="false">↔</mo><mo lspace="0.1389em" rspace="0em">∂</mo><mi>S</mi><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn><mo rspace="0.330em" stretchy="false">)</mo></mrow><mtext>sem usar elos anteriores</mtext><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{p}(y_{k-1}\leftrightarrow\partial S(y_{k-1},r_{k}+1)\,\,\mbox%
+{sem usar elos anteriores})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex37.m1" class="ltx_math_unparsed" alttext="\displaystyle\times P_{p}(y_{k-1}\leftrightarrow\partial S_{n}\,\,\mbox{sem %
+usar elos anteriores})." display="inline"><semantics><mrow><mo rspace="0.222em">×</mo><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo rspace="0.1389em" stretchy="false">↔</mo><mo lspace="0.1389em" rspace="0em">∂</mo><msub><mi>S</mi><mi>n</mi></msub><mtext>sem usar elos anteriores</mtext><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\times P_{p}(y_{k-1}\leftrightarrow\partial S_{n}\,\,\mbox{sem %
+usar elos anteriores}).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">A última probabilidade é igual a <math id="p44.m4" class="ltx_Math" alttext="P_{p}(A_{n}|B_{\Gamma})" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo fence="false">|</mo><msub><mi>B</mi><mi mathvariant="normal">Γ</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{p}(A_{n}|B_{\Gamma})</annotation></semantics></math>. A primeira é menor ou igual a</p>
+<div id="Ex38" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex38.m1" class="ltx_math_unparsed" alttext="P_{p}(y_{k-1}\leftrightarrow\partial S(y_{k-1},r_{k}+1))" display="block"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo rspace="0.1389em" stretchy="false">↔</mo><mo lspace="0.1389em" rspace="0em">∂</mo><mi>S</mi><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{p}(y_{k-1}\leftrightarrow\partial S(y_{k-1},r_{k}+1))</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">que, pela invariância translacional do
+modelo, é igual a <math id="p44.m5" class="ltx_math_unparsed" alttext="P_{p}(A_{r_{k}+1}).\quad\triangle" display="inline"><semantics><mrow><msub><mi>P</mi><mi>p</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo><mspace width="1.367em"></mspace><mi mathvariant="normal">△</mi></mrow><annotation encoding="application/x-tex">P_{p}(A_{r_{k}+1}).\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="p45" class="ltx_para">
+<p class="ltx_p">A conclusão de que (<a href="#E9" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>), e portanto o Teorema <a href="#ThmTeo1" title="Teorema 3.1 (Menshikov) ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>,
+segue de (<a href="#E8" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8</span></a>) se dá através do próximo lema, um resultado puramente analítico,
+cuja prova será apresentada no apêndice a estas notas.</p>
+</div>
+<div id="ThmLem3" class="ltx_theorem ltx_theorem_Lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Lema 3.3</span></span></h6>
+<div id="ThmLem3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para <math id="ThmLem3.p1.m1" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math>, existe uma constante <math id="ThmLem3.p1.m2" class="ltx_Math" alttext="\delta(p)" display="inline"><semantics><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\delta(p)</annotation></semantics></math> tal que</span></p>
+<div id="E20" class="ltx_equation ltx_eqn_div">
+<span><math id="E20.m1" class="ltx_Math" alttext="g_{p}(n)\leq\delta(p)n^{-1/2}." display="block"><semantics><mrow><mrow><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>n</mi><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">g_{p}(n)\leq\delta(p)n^{-1/2}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.20)</span>
+            
+            
+          
+</div>
+</div>
+</div>
+<div id="p46" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova do Teorema <a href="#ThmTeo1" title="Teorema 3.1 (Menshikov) ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a></span>
+De (<a href="#E20" title="In Lema 3.3 ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.20</span></a>), temos que</p>
+<div id="E21" class="ltx_equation ltx_eqn_div">
+<span><math id="E21.m1" class="ltx_Math" alttext="\sum_{i=0}^{n}g_{p}(i)\leq\Delta(p)n^{1/2}," display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>g</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>n</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\sum_{i=0}^{n}g_{p}(i)\leq\Delta(p)n^{1/2},</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.21)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">para algum <math id="p46.m1" class="ltx_Math" alttext="\Delta(p)" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta(p)</annotation></semantics></math>.</p>
+</div>
+<div id="p47" class="ltx_para">
+<p class="ltx_p">Substituindo (<a href="#E21" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.21</span></a>) em (<a href="#E8" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8</span></a>), obtemos</p>
+<div id="E22" class="ltx_equation ltx_eqn_div">
+<span><math id="E22.m1" class="ltx_Math" alttext="g_{\alpha}(n)\leq g_{\beta}(n)\exp\left[(\beta-\alpha)-c(\beta-\alpha)n^{1/2}%
+\right]," display="block"><semantics><mrow><mrow><mrow><msub><mi>g</mi><mi>α</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>g</mi><mi>β</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>n</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>]</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">g_{\alpha}(n)\leq g_{\beta}(n)\exp\left[(\beta-\alpha)-c(\beta-\alpha)n^{1/2}%
+\right],</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.22)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">onde <math id="p47.m1" class="ltx_Math" alttext="c" display="inline"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math> é uma constante positiva, o que implica (<a href="#E9" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.9</span></a>).<math id="p47.m2" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="p48" class="ltx_para">
+<p class="ltx_p">É uma conseqüência imediata do Teorema <a href="#ThmTeo1" title="Teorema 3.1 (Menshikov) ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a> o decaimento exponencial
+da função de conectividade.</p>
+</div>
+<div id="ThmCor2" class="ltx_theorem ltx_theorem_Cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolário 3.2</span></span></h6>
+<div id="ThmCor2.p1" class="ltx_para">
+<div id="E23" class="ltx_equation ltx_eqn_div">
+<span><math id="E23.m1" class="ltx_Math" alttext="\tau_{p}(x,y)\leq e^{-\phi_{p}||x-y||_{1}}," display="block"><semantics><mrow><mrow><mrow><msub><mi>τ</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msub><mi>ϕ</mi><mi>p</mi></msub><mo>⁢</mo><msub><mrow><mo maxsize="142%" minsize="142%">‖</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo maxsize="142%" minsize="142%">‖</mo></mrow><mn>1</mn></msub></mrow></mrow></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\tau_{p}(x,y)\leq e^{-\phi_{p}||x-y||_{1}},</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.23)</span>
+            
+            
+          
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">com <math id="ThmCor2.p1.m1" class="ltx_Math" alttext="\phi_{p}&gt;0" display="inline"><semantics><mrow><msub><mi>ϕ</mi><mi>p</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\phi_{p}&gt;0</annotation></semantics></math> para <math id="ThmCor2.p1.m2" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p49" class="ltx_para">
+<p class="ltx_p">(Verifique!)</p>
+</div>
+<div id="p50" class="ltx_para">
+<p class="ltx_p">Em seguida apresentamos outro corolário ao Teorema <a href="#ThmTeo1" title="Teorema 3.1 (Menshikov) ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>
+estabelecendo a suavidade de <math id="p50.m1" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> na fase
+subcrítica.</p>
+</div>
+<div id="ThmCor3" class="ltx_theorem ltx_theorem_Cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolário 3.3</span></span></h6>
+<div id="ThmCor3.p1" class="ltx_para">
+<p class="ltx_p"><math id="ThmCor3.p1.m1" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é <math id="ThmCor3.p1.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> vezes diferenciável em <math id="ThmCor3.p1.m3" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math> para todo <math id="ThmCor3.p1.m4" class="ltx_Math" alttext="k\geq 1" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\geq 1</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p51" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Prova.</span></p>
+</div>
+<div id="p52" class="ltx_para">
+<p class="ltx_p">Como <math id="p52.m1" class="ltx_Math" alttext="p&lt;p_{c}" display="inline"><semantics><mrow><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">p&lt;p_{c}</annotation></semantics></math>, podemos escrever <math id="p52.m2" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> como</p>
+<div id="E24" class="ltx_equation ltx_eqn_div">
+<span><math id="E24.m1" class="ltx_Math" alttext="\chi_{p}=\sum_{n=1}^{\infty}nP_{p}(|C|=n)." display="block"><semantics><mrow><mrow><msub><mi>χ</mi><mi>p</mi></msub><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>n</mi><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>C</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\chi_{p}=\sum_{n=1}^{\infty}nP_{p}(|C|=n).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.24)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p53" class="ltx_para">
+<p class="ltx_p">A última probabilidade pode ser expressa como</p>
+<div id="E25" class="ltx_equation ltx_eqn_div">
+<span><math id="E25.m1" class="ltx_Math" alttext="P_{p}(|C|=n)=\sum_{m,b}a_{nmb}p^{m}(1-p)^{b}," display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>C</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>,</mo><mi>b</mi></mrow></munder><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P_{p}(|C|=n)=\sum_{m,b}a_{nmb}p^{m}(1-p)^{b},</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.25)</span>
+          
+          
+        
+</div>
+<p class="ltx_p">onde <math id="p53.m1" class="ltx_Math" alttext="a_{nmb}" display="inline"><semantics><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><annotation encoding="application/x-tex">a_{nmb}</annotation></semantics></math> é o número de animais de rede com <math id="p53.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> sítios, <math id="p53.m3" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> elos
+e <math id="p53.m4" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> elos de fronteira. Por <span class="ltx_text ltx_font_italic">animal de rede</span> denotamos conjuntos
+conexos de sítios da rede contendo a origem.</p>
+</div>
+<div id="p54" class="ltx_para">
+<p class="ltx_p">Para <math id="p54.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> fixo, são válidas as seguintes cotas para
+<math id="p54.m2" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> e <math id="p54.m3" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> (verifique-as!)</p>
+<div id="E26" class="ltx_equation ltx_eqn_div">
+<span><math id="E26.m1" class="ltx_Math" alttext="n-1\leq m\leq dn\quad\mbox{e}\quad b\leq 2dn." display="block"><semantics><mrow><mrow><mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mi>m</mi><mo>≤</mo><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mspace width="1.2em"></mspace><mrow><mrow><mtext>e</mtext><mspace width="1.2em"></mspace><mi>b</mi></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">n-1\leq m\leq dn\quad\mbox{e}\quad b\leq 2dn.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.26)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p55" class="ltx_para">
+<p class="ltx_p">Estas produzem a seguinte cota para <math id="p55.m1" class="ltx_Math" alttext="\sum_{m,b}a_{nmb}" display="inline"><semantics><mrow><msub><mo>∑</mo><mrow><mi>m</mi><mo>,</mo><mi>b</mi></mrow></msub><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\sum_{m,b}a_{nmb}</annotation></semantics></math></p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx14" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex40">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex39.m1" class="ltx_Math" alttext="\displaystyle 1\geq\sum_{m,b}a_{nmb}p^{m}(1-p)^{b}" display="inline"><semantics><mrow><mn>1</mn><mo>≥</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>,</mo><mi>b</mi></mrow></munder></mstyle><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 1\geq\sum_{m,b}a_{nmb}p^{m}(1-p)^{b}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex39.m2" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex39.m3" class="ltx_Math" alttext="\displaystyle\sum_{m,b}a_{nmb}p^{dn}(1-p)^{2dn}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>,</mo><mi>b</mi></mrow></munder></mstyle><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mi>p</mi><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{m,b}a_{nmb}p^{dn}(1-p)^{2dn}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex40.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex40.m2" class="ltx_Math" alttext="\displaystyle(p(1-p)^{2})^{dn}\sum_{m,b}a_{nmb}," display="inline"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>,</mo><mi>b</mi></mrow></munder></mstyle><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle(p(1-p)^{2})^{dn}\sum_{m,b}a_{nmb},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">do que temos</p>
+<div id="E27" class="ltx_equation ltx_eqn_div">
+<span><math id="E27.m1" class="ltx_Math" alttext="\sum_{m,b}a_{nmb}\leq(p(1-p)^{2})^{-dn}\leq 7^{dn}." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>,</mo><mi>b</mi></mrow></munder><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub></mrow><mo>≤</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mo>≤</mo><msup><mn>7</mn><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sum_{m,b}a_{nmb}\leq(p(1-p)^{2})^{-dn}\leq 7^{dn}.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.27)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p56" class="ltx_para">
+<p class="ltx_p">Voltando a (<a href="#E25" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.25</span></a>), temos</p>
+<div id="E28" class="ltx_equation ltx_eqn_div">
+<span><math id="E28.m1" class="ltx_Math" alttext="\chi_{p}=\sum_{n}\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}p^{m}(1-p)^{b}." display="block"><semantics><mrow><mrow><msub><mi>χ</mi><mi>p</mi></msub><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mi>n</mi></munder><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\chi_{p}=\sum_{n}\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}p^{m}(1-p)^{b}.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.28)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p57" class="ltx_para">
+<p class="ltx_p">Vamos dividir o argumento em dois. Para <math id="p57.m1" class="ltx_Math" alttext="p=0" display="inline"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p=0</annotation></semantics></math>,
+provaremos o fato mais forte de que <math id="p57.m2" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> é analítica (isto é, pode ser
+escrita como série de potências convergente de <math id="p57.m3" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>, o que implica em suavidade).
+Em seguida, provaremos suavidade para <math id="p57.m4" class="ltx_Math" alttext="0&lt;p&lt;p_{c}" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>p</mi><mo>&lt;</mo><msub><mi>p</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">0&lt;p&lt;p_{c}</annotation></semantics></math>.</p>
+</div>
+<div id="p58" class="ltx_para">
+<p class="ltx_p">Estendendo <math id="p58.m1" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> formalmente ao plano complexo a partir de (<a href="#E28" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.28</span></a>), temos</p>
+<div id="E29" class="ltx_equation ltx_eqn_div">
+<span><math id="E29.m1" class="ltx_Math" alttext="K(z)=\sum_{n}\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}z^{m}(1-z)^{b}." display="block"><semantics><mrow><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mi>n</mi></munder><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mi>z</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">K(z)=\sum_{n}\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}z^{m}(1-z)^{b}.</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.29)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p59" class="ltx_para">
+<p class="ltx_p">Para provarmos analiticidade de <math id="p59.m1" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> na origem, basta mostrarmos
+(pelo Teorema de Vitali), que a série
+acima é uniformemente convergente numa região do plano complexo
+contendo a origem.</p>
+</div>
+<div id="p60" class="ltx_para">
+<p class="ltx_p">De (<a href="#E27" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.27</span></a>) temos</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx15" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex43">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex41.m1" class="ltx_Math" alttext="\displaystyle\left|\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}z^{m}(1-z)^{b}\right|" display="inline"><semantics><mrow><mo>|</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mi>z</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow></mrow></mrow><mo>|</mo></mrow><annotation encoding="application/x-tex">\displaystyle\left|\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}z^{m}(1-z)^{b}\right|</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex41.m2" class="ltx_Math" alttext="\displaystyle\leq" display="inline"><semantics><mo>≤</mo><annotation encoding="application/x-tex">\displaystyle\leq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex41.m3" class="ltx_Math" alttext="\displaystyle\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}|z|^{m}(1+|z|)^{b}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}|z|^{m}(1+|z|)^{b}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex42.m1" class="ltx_Math" alttext="\displaystyle\leq" display="inline"><semantics><mo>≤</mo><annotation encoding="application/x-tex">\displaystyle\leq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex42.m2" class="ltx_Math" alttext="\displaystyle n7^{dn}|z|^{n-1}(1+|z|)^{2dn}" display="inline"><semantics><mrow><mi>n</mi><mo>⁢</mo><msup><mn>7</mn><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle n7^{dn}|z|^{n-1}(1+|z|)^{2dn}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex43.m1" class="ltx_Math" alttext="\displaystyle\leq" display="inline"><semantics><mo>≤</mo><annotation encoding="application/x-tex">\displaystyle\leq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex43.m2" class="ltx_Math" alttext="\displaystyle Anc(z)^{n-1}" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle Anc(z)^{n-1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">se <math id="p60.m1" class="ltx_Math" alttext="|z|\leq 1" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|\leq 1</annotation></semantics></math>, onde <math id="p60.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> depende apenas de <math id="p60.m3" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> e <math id="p60.m4" class="ltx_Math" alttext="c(z)=|z|\{7(1+|z|)^{2}\}" display="inline"><semantics><mrow><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mrow><mn>7</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">c(z)=|z|\{7(1+|z|)^{2}\}</annotation></semantics></math>.</p>
+</div>
+<div id="p61" class="ltx_para">
+<p class="ltx_p">Para <math id="p61.m1" class="ltx_Math" alttext="|z|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|z|</annotation></semantics></math> suficientemente pequeno, <math id="p61.m2" class="ltx_Math" alttext="c(z)&lt;1" display="inline"><semantics><mrow><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c(z)&lt;1</annotation></semantics></math> e concluimos que
+a série definindo <math id="p61.m3" class="ltx_Math" alttext="K(z)" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">K(z)</annotation></semantics></math> é uniformemente convergente numa vizinhança
+complexa da origem e portanto <math id="p61.m4" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> é analítica em <math id="p61.m5" class="ltx_Math" alttext="p=0" display="inline"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p=0</annotation></semantics></math>.</p>
+</div>
+<div id="p62" class="ltx_para">
+<p class="ltx_p">Em seguida, vamos diferenciar <math id="p62.m1" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> formalmente <math id="p62.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> vezes
+usando (<a href="#E28" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.28</span></a>) para obter</p>
+<div id="E30" class="ltx_equation ltx_eqn_div">
+<span><math id="E30.m1" class="ltx_Math" alttext="\frac{d^{k}}{dp^{k}}\chi_{p}=\sum_{n}\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}%
+\frac{d^{k}}{dp^{k}}(p^{m}(1-p)^{b})." display="block"><semantics><mrow><mrow><mrow><mfrac><msup><mi>d</mi><mi>k</mi></msup><mrow><mi>d</mi><mo>⁢</mo><msup><mi>p</mi><mi>k</mi></msup></mrow></mfrac><mo>⁢</mo><msub><mi>χ</mi><mi>p</mi></msub></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mi>n</mi></munder><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><mfrac><msup><mi>d</mi><mi>k</mi></msup><mrow><mi>d</mi><mo>⁢</mo><msup><mi>p</mi><mi>k</mi></msup></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{d^{k}}{dp^{k}}\chi_{p}=\sum_{n}\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}%
+\frac{d^{k}}{dp^{k}}(p^{m}(1-p)^{b}).</annotation></semantics></math></span>
+          <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.30)</span>
+          
+          
+        
+</div>
+</div>
+<div id="p63" class="ltx_para">
+<p class="ltx_p">Para obter a diferenciabilidade de <math id="p63.m1" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> em <math id="p63.m2" class="ltx_Math" alttext="I:=(0,p_{c})" display="inline"><semantics><mrow><mi>I</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msub><mi>p</mi><mi>c</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">I:=(0,p_{c})</annotation></semantics></math>, basta mostrar que
+a série acima é uniformemente convergente num intervalo fechado arbitrário de
+<math id="p63.m3" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>. Para isto notemos que</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx16" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex46">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex44.m1" class="ltx_Math" alttext="\displaystyle\left|\frac{d^{k}}{dp^{k}}(p^{m}(1-p)^{b})\right|" display="inline"><semantics><mrow><mo>|</mo><mrow><mstyle displaystyle="true"><mfrac><msup><mi>d</mi><mi>k</mi></msup><mrow><mi>d</mi><mo>⁢</mo><msup><mi>p</mi><mi>k</mi></msup></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>|</mo></mrow><annotation encoding="application/x-tex">\displaystyle\left|\frac{d^{k}}{dp^{k}}(p^{m}(1-p)^{b})\right|</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex44.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex44.m3" class="ltx_Math" alttext="\displaystyle\left|\sum_{r=0}^{k}{k\choose r}m_{r}b_{k-r}p^{m-r}(-1)^{k-r}(1-p%
+)^{b-(k-r)}\right|" display="inline"><semantics><mrow><mo>|</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover></mstyle><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>k</mi><mi>r</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>m</mi><mi>r</mi></msub><mo>⁢</mo><msub><mi>b</mi><mrow><mi>k</mi><mo>−</mo><mi>r</mi></mrow></msub><mo>⁢</mo><msup><mi>p</mi><mrow><mi>m</mi><mo>−</mo><mi>r</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><mi>r</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>b</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></mrow><mo>|</mo></mrow><annotation encoding="application/x-tex">\displaystyle\left|\sum_{r=0}^{k}{k\choose r}m_{r}b_{k-r}p^{m-r}(-1)^{k-r}(1-p%
+)^{b-(k-r)}\right|</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex45.m1" class="ltx_Math" alttext="\displaystyle\leq" display="inline"><semantics><mo>≤</mo><annotation encoding="application/x-tex">\displaystyle\leq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex45.m2" class="ltx_Math" alttext="\displaystyle p^{m}(1-p)^{b}\sum_{r=0}^{k}{k\choose r}(m/p)^{r}(b/(1-p))^{k-r}" display="inline"><semantics><mrow><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover></mstyle><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>k</mi><mi>r</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>/</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>r</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><mi>r</mi></mrow></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle p^{m}(1-p)^{b}\sum_{r=0}^{k}{k\choose r}(m/p)^{r}(b/(1-p))^{k-r}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex46.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex46.m2" class="ltx_Math" alttext="\displaystyle p^{m}(1-p)^{b}\left(\frac{m}{p}+\frac{b}{1-p}\right)^{k}," display="inline"><semantics><mrow><mrow><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi>m</mi><mi>p</mi></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>b</mi><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>k</mi></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle p^{m}(1-p)^{b}\left(\frac{m}{p}+\frac{b}{1-p}\right)^{k},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">onde <math id="p63.m4" class="ltx_Math" alttext="x_{r}=x!/r!" display="inline"><semantics><mrow><msub><mi>x</mi><mi>r</mi></msub><mo>=</mo><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>/</mo><mrow><mi>r</mi><mo>!</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x_{r}=x!/r!</annotation></semantics></math>. Logo,</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S0.EGx17" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ex49">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex47.m1" class="ltx_Math" alttext="\displaystyle\sum_{n\geq N}\left|\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}%
+\frac{d^{k}}{dp^{k}}(p^{m}(1-p)^{b})\right|" display="inline"><semantics><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>≥</mo><mi>N</mi></mrow></munder></mstyle><mrow><mo>|</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mi>d</mi><mi>k</mi></msup><mrow><mi>d</mi><mo>⁢</mo><msup><mi>p</mi><mi>k</mi></msup></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{n\geq N}\left|\sum_{m=n-1}^{dn}\sum_{b=1}^{2dn}na_{nmb}%
+\frac{d^{k}}{dp^{k}}(p^{m}(1-p)^{b})\right|</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex48.m1" class="ltx_Math" alttext="\displaystyle\leq" display="inline"><semantics><mo>≤</mo><annotation encoding="application/x-tex">\displaystyle\leq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex48.m2" class="ltx_Math" alttext="\displaystyle\left(\frac{2d}{p(1-p)}\right)^{k}\sum_{n\geq N}n^{k}\sum_{m=n-1}%
+^{dn}\sum_{b=1}^{2dn}na_{nmb}p^{m}(1-p)^{b}" display="inline"><semantics><mrow><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>)</mo></mrow><mi>k</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>≥</mo><mi>N</mi></mrow></munder></mstyle><mrow><msup><mi>n</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></msub><mo>⁢</mo><msup><mi>p</mi><mi>m</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mi>b</mi></msup></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\left(\frac{2d}{p(1-p)}\right)^{k}\sum_{n\geq N}n^{k}\sum_{m=n-1}%
+^{dn}\sum_{b=1}^{2dn}na_{nmb}p^{m}(1-p)^{b}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex49.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo>=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex49.m2" class="ltx_Math" alttext="\displaystyle\left(\frac{2d}{p(1-p)}\right)^{k}\sum_{n\geq N}n^{k}P_{p}(|C|=n)" display="inline"><semantics><mrow><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>d</mi></mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>)</mo></mrow><mi>k</mi></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>≥</mo><mi>N</mi></mrow></munder></mstyle><mrow><msup><mi>n</mi><mi>k</mi></msup><mo>⁢</mo><msub><mi>P</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>C</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\left(\frac{2d}{p(1-p)}\right)^{k}\sum_{n\geq N}n^{k}P_{p}(|C|=n)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">e, portanto, (<a href="#E3" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>) implica na convergência uniforme de (<a href="#E30" title="In Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.30</span></a>) em
+intervalos fechados de <math id="p63.m5" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>. <math id="p63.m6" class="ltx_Math" alttext="\quad\triangle" display="inline"><semantics><mi mathvariant="normal">△</mi><annotation encoding="application/x-tex">\quad\triangle</annotation></semantics></math></p>
+</div>
+<div id="ThmObs3" class="ltx_theorem ltx_theorem_Obs">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Observação 3.3</span></span></h6>
+<div id="ThmObs3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Um argumento semelhante ao da prova acima, mas usando o decaimento <span class="ltx_text ltx_font_normal">exponencial</span> da distribuição de <math id="ThmObs3.p1.m1" class="ltx_Math" alttext="|C|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>C</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|C|</annotation></semantics></math> (como discutido na
+Observação <a href="#ThmObs2" title="Observação 3.2 ‣ Capítulo 3 Fase Subcrítica: Decaimento Exponencial ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>), prova analiticidade de <math id="ThmObs3.p1.m2" class="ltx_Math" alttext="\chi_{p}" display="inline"><semantics><msub><mi>χ</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\chi_{p}</annotation></semantics></math> em <math id="ThmObs3.p1.m3" class="ltx_Math" alttext="(0,p_{c})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msub><mi>p</mi><mi>c</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,p_{c})</annotation></semantics></math>.
+(Vide <cite class="ltx_cite ltx_citemacro_cite">[<a href="bib.html#bib8" title="" class="ltx_ref">8</a>]</cite>.)</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "per.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>
