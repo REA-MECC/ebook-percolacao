@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação</title>
-<!--Generated on Fri Feb 14 23:15:28 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Generated on Sun Feb 16 10:53:11 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
 <style>:root { --bml-ltx-font-size: 12; }</style>
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-book.css" type="text/css">
@@ -94,7 +94,7 @@ de lado <math id="p4.m3" class="ltx_Math" alttext="2K" display="inline"><semanti
 existe um caminho aberto dentro dos dois cubos grandes conectando a superfície
 dos dois cubos menores (vide Figura <a href="#F1" title="Figura 6.1 ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1</span></a>).</p>
 </div>
-<figure id="F1" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x14.png" id="F1.g1" class="ltx_graphics ltx_img_landscape" width="486" height="205" alt="Refer to caption"></div>
+<figure id="F1" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="figures/fren1.svg" alt="O evento " id="F1.g1" class="ltx_graphics ltx_img_landscape" width="350" height="148"></div>
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 6.1: </span>O evento <math id="F1.m2" class="ltx_Math" alttext="A_{K,L}" display="inline"><semantics><msub><mi>A</mi><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><annotation encoding="application/x-tex">A_{K,L}</annotation></semantics></math></figcaption>
 </figure>
 <div id="p5" class="ltx_para">
@@ -204,7 +204,7 @@ corresponde a um cubo <math id="p14.m2" class="ltx_Math" alttext="2L\times 2L\ti
 Figura <a href="#F2" title="Figura 6.2 ‣ Capítulo 6 Continuidade no Ponto Crítico: Renormalização ‣ Notas em Percolação" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2</span></a>. Declare um elo
 <span class="ltx_text ltx_font_italic">renormalizado</span> aberto se <math id="p14.m4" class="ltx_Math" alttext="\tilde{A}_{K,L}(e)" display="inline"><semantics><mrow><msub><mover accent="true"><mi>A</mi><mo>~</mo></mover><mrow><mi>K</mi><mo>,</mo><mi>L</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\tilde{A}_{K,L}(e)</annotation></semantics></math> ocorrer.</p>
 </div>
-<figure id="F2" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x15.png" id="F2.g1" class="ltx_graphics ltx_img_landscape" width="426" height="245" alt="Refer to caption"></div>
+<figure id="F2" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="figures/fren2.svg" alt="Parte da rede " id="F2.g1" class="ltx_graphics ltx_img_landscape" width="307" height="176"></div>
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 6.2: </span>Parte da rede <math id="F2.m2" class="ltx_Math" alttext="\mathbb{Z}^{2}" display="inline"><semantics><msup><mi>ℤ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{2}</annotation></semantics></math> renormalizada.</figcaption>
 </figure>
 <div id="p15" class="ltx_para">
@@ -241,6 +241,100 @@ para o leitor. <math id="p17.m3" class="ltx_Math" alttext="\quad\triangle" displ
 <script src="bookml/gitbook/js/plugin-search.js"></script>
 <script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
 <script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
 <script type="text/javascript">
                 gitbook.require(["gitbook"], function(gitbook) {
                 gitbook.start({
